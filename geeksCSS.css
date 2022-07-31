@@ -1,0 +1,1016 @@
+@font-face {
+    font-family: Azonix;
+    src: url(../Fonts/Azonix.otf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../Fonts/AvenirLTStd-Roman.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+}
+
+html { 
+    background-color: black;
+}
+
+.wrapper {
+    overflow-x: hidden;
+    background: url(../images/darksquare.webp) center center fixed; 
+}
+
+h1 {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+}
+
+h2 {
+    border-top: 5px solid white;
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-family: 'Avenir';
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: -16px;
+    display: block;
+    font-size: 35px;
+}
+
+h4 {
+    margin: 4px;
+    font-size: 3.5vmax;
+    width: 35%;
+    text-align: center;
+    border-top: 2px solid white;
+    transition: 0.25s ease;
+}
+
+h5 {
+    font-size: 2.7vw;
+    height: 70%;
+    width: 37%;
+    margin-left: 8px;
+    margin-top: 16px;
+    text-align: center;
+    transition: 0.25s ease;
+}
+
+/*------- Animation Section -------*/
+
+.animateUP {
+    animation: goingUp 1.5s forwards;
+}
+
+.animateLEFT {
+    animation: goingLeft 1.5s forwards;
+}
+
+.animateRIGHT {
+    animation: goingRight 1.5s forwards;
+}
+
+.animateLEAVELEFT {
+    animation: exitLeft 3s forwards;
+}
+
+.animateLEAVERIGHT {
+    animation: exitRight 3s forwards;
+}
+
+@keyframes goingUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes goingLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes exitLeft {
+    0%{
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-120%);
+    }
+
+    100%{
+        transform: translate(0);
+        opacity: 0;
+    }
+}
+
+@keyframes goingRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes exitRight {
+    0%{
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(120%);
+    }
+
+    100%{
+        transform: translate(0);
+        opacity: 0;
+    }
+}
+/*------- Header Section -------*/
+
+.header {
+    display: block;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 96px;
+    z-index: 2;
+}
+
+.innerHeader {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.logo {
+    display: table;
+    float: left;
+    height: 100%;
+}
+
+.logo img {
+    display: table-cell;
+    height: 50px;
+}
+
+.logo a {
+    display: table-cell;
+    color: white;
+    font-family: 'Azonix';
+    vertical-align: middle;
+    height: 100%;
+    font-size: 40px;
+    transition: .3s ease;
+}
+
+.logo a:hover {
+    opacity: 0.6;
+}
+
+.navi {
+    float: right;
+    height: 100%;
+}
+
+.navi a {
+    display: table-cell;
+    font-family: 'Avenir';
+    vertical-align: middle;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+}
+
+.navi li {
+    display: table;
+    float: left;
+    height: 100%;
+    padding: 0px 8px;
+    margin-left: 4px;
+    transition: .3s ease;
+}
+
+.navi a:hover {
+    opacity: 0.6;
+}
+
+.navi a:last-child {
+    padding-right: 0;
+}
+
+/*------- Title Section -------*/
+
+.titleCard {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: top 50% right;
+    background-image: url(../images/vgwithgrad.png);
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Avenir';
+    height: 85vh;
+    font-size: 4vw;
+    padding: 40px;
+}
+
+.titleCard:nth-of-type(5){
+    background-image: url(../images/macwithgrad.png);
+    height: 80vh;
+    background-size: 55%;
+    background-position: left;
+}
+
+.titleCard h1 span {
+    display: none;
+}
+
+.titleCard h1 span.visible {
+    display: block;
+    animation: textUp .5s ease;
+}
+
+.colourOverlay {
+    position: absolute;
+    background: linear-gradient(to bottom right, blue, green);
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
+@keyframes textUp {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+}
+
+/*------- Scroll Section -------*/
+
+.scroll { 
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 40px;
+    transition: 2s ease;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.scroll h3{
+    padding-bottom: 40px;
+}
+.scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -16px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: scrollDown 1.5s infinite;
+    animation: scrollDown 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes scrollDown {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+  
+@keyframes scrollDown {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+/*------- Modal Section -------*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 1s ease;
+}
+
+.modalDialogue {
+    overflow: hidden;
+    display: flex;
+    width: 700px;
+    height: 700px;
+    background-color: #fefefe;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.modalDialogue a{
+    color: white;
+}
+
+.modalDialogue a h2:hover{
+    opacity: 0.8;
+}
+
+.modalLeft{
+    width: 50%;
+}
+
+.modalRight{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.modalDialogue h1{
+    width: 100%;
+    height: fit-content;
+    font-family: 'Azonix';
+    margin: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.modalDialogue h2{
+    border: none;
+    text-align: center;
+    margin: none;
+    font-size: 60px;
+    margin-top: -8px;
+}
+
+.modalDialogue p{
+    font-family: 'Avenir';
+    font-size: 20px;
+    padding: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.modalRight img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 5px solid white;
+    margin: auto;
+    transition: 0.25s ease;
+}
+
+/*------- EventInfo Sections -------*/
+
+.eventsInfo {
+    display: flex;
+    padding: 24px;
+    margin-bottom: 10vh;
+}
+
+.eventsLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.eventsRight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.eventList {
+    width: 100%;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-style: italic;
+    width: 95%;
+    height: 70px;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    font-family: 'Avenir';
+}
+
+.event:first-of-type {
+    margin-top: 32px;
+}
+
+.event:hover h4 {
+    background: -webkit-linear-gradient(#27BDB6, #B6E570);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-10%);
+}
+
+.event:hover h5 {
+    transform: scale(0.95);
+    overflow: visible;
+}
+
+.eImages {
+    border: 5px solid white;
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(../images/sGeeks.jpeg);
+    display: block;
+    width: 40vw;
+    height: 40vw;
+    max-width: 575px;
+    max-height: 575px;
+    margin: auto;
+}
+
+.eventsInfo a {
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    display: block;
+    font-family: 'Avenir';
+    font-size: 30px;
+    margin: auto;
+    width: 50%;
+    min-width: 250px;
+    padding: 8px;
+    padding-top: 16px;
+    margin-top: 40px;
+    transition: 1s ease;
+    border-radius: 30px;
+}
+
+.eventsInfo a:hover {
+    color: white;
+    background-color: black;
+}
+
+/*------- About Us Sections -------*/
+
+.aboutUsLeft {
+    display: block;
+    z-index: 1;
+    width: 100%;
+}
+
+.aboutUsMid {
+    width: 50%;
+}
+
+.aboutUsRight {
+    display: block;
+    width: 100%;
+    z-index: 1;
+}
+
+.subheading{
+    font-family: 'Avenir';
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.social {
+    display: flex;
+    vertical-align: auto;
+    justify-content: left;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.social a {
+    color: white;
+    padding: 8px;
+    font-size: 5vmax;
+    transition: .3s ease;
+}
+
+.social a:hover {
+    opacity: 0.6;
+}
+
+.social img {
+    height: 6vmax;
+    margin-right: 12px;
+}
+
+/*------- Footer Sections -------*/
+
+.footer {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+}
+
+.innerFooter {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.innerFooter p {
+    padding: 24px;
+}
+
+.innerFooter a {
+    color: white;
+    padding: 24px;
+    padding-right: none;
+}
+
+.innerFooter a:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+/*------- Weeklies Section -------*/
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'Avenir';
+    height: 20vh;
+    vertical-align: bottom;
+    font-size: 150px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    padding: 24px;
+    line-height: 50%;
+}
+
+.subtitle:first-of-type{
+    font-size: 10vw;
+    padding-top: 8%;
+}
+
+.weeklies a{
+    color: white;
+}
+
+.days {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 60vmax;
+}
+
+.days span{
+    width: fit-content;
+    margin: auto;
+    font-family: 'Avenir';
+    font-size: 90px;
+    text-align: center;
+    transition: 0.25s ease-in-out;
+}
+
+.weeklyGames{
+    display: flex;
+    justify-content: center;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    padding: auto;
+    transition: .5s ease;
+}
+
+.weeklyEvent {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 150px;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Avenir';
+    font-size: 40px;
+    border: 4px solid white;
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all .2s ease;
+}
+
+.weeklyEvent .eventList{
+    margin-left: 32px;
+}
+
+.eventList h3{
+    margin-top: 8px;
+    opacity: 0.8;
+    text-align: left;
+}
+
+.weeklyEvent h1{
+    text-align: left;
+    float: left;
+}
+
+.weeklyEvent img{
+    margin-right: 48px;
+    display: block;
+    height: 140px;
+}
+
+.weeklyEvent:hover{
+    box-shadow: 5px 5px white;
+}
+
+.link{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+}
+
+.link a{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+/*------- Sign Up Section -------*/
+
+.eventWrapper{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.eventBox{
+    position: absolute;
+    background-color:  rgb(107, 202, 186, 0.8);
+    background-attachment: fixed;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    padding: 32px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.eventBox h1{
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 4vw;
+}
+
+.eventBox p{
+    margin-top: 24px;
+    font-family: 'Avenir';
+    font-size: 2vw;
+}
+
+.signUpInfo a {
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    display: block;
+    font-family: 'Azonix';
+    font-size: 30px;
+    margin: auto;
+    width: fit-content;
+    min-width: 200px;
+    padding: 16px;
+    margin-top: 40px;
+    transition: 1s ease;
+}
+
+.signUpInfo a:hover {
+    color: white;
+    background-color: black;
+}
+
+.signUpInfo{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-top: 8px;
+}
+
+.signUpInfo h1{
+    font-size: 100px;
+}
+
+.signUpInfo h1:hover{
+    opacity: 0.8;
+}
+
+/*------- About Us Section -------*/
+
+.flex-gap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.flex-gap > div {
+    margin-top: 24px;
+}
+
+.people{
+    margin: 32px;
+    border: solid 5px white;
+    border-radius: 5px;
+    transition: 0.15s ease;
+}
+
+.people:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px #27BDB6;
+}
+
+.people img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.people h2{
+    border-top: none;
+    font-family: 'Azonix';
+    padding: 8px;
+}
+
+.people h3{
+    font-family: 'Avenir';
+    padding: 8px;
+    text-align: center;
+}
+
+/*------- Mobile View Section -------*/
+.animation {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo a:last-child {
+        content: '';
+        display: none;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .innerHeader {
+        width: 95%;
+    }
+
+    .navi li a {
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 7vmax;
+    }
+
+    .eventsInfo {
+        flex-direction: column-reverse;
+        padding: 2px;
+    }
+
+    .eventsInfo:last-of-type{
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .event {
+        flex-direction: column-reverse;
+    }
+
+    .event h4 {
+        font-size: 200%;
+        width: 160px;
+    }
+
+    .event h5 {
+        font-size: 200%;
+        width: 100%;
+    }
+
+    .eventsInfo .eImages {
+        width: 38vmax;
+        height: 38vmax;
+        border: 2px solid white;
+    }
+
+    .eventsInfo .eImages:first-child {
+        margin-top: 24px;
+    }
+
+    .eventsInfo a {
+        font-size: 3vmax;
+        transform: scale(0.9);
+    }
+
+    .titleCard {
+        flex-direction: column;
+    }
+
+    .titleCard:nth-of-type(5){
+        background-size: 85%;
+        background-position: top 20% center;
+    }
+
+    .aboutUsLeft h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutUsLeft h3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .social{
+        justify-content: center;
+    }
+
+    .social a{
+        width: 32vw;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .innerFooter{
+        width: 100%;
+    }
+    .innerFooter p {
+        font-size: 10px;
+    }
+
+    .innerFooter a {
+        font-size: 10px;
+    }
+
+    /* Upcoming Events */
+    
+    .subtitle{
+        font-size: 75px;
+    }
+
+    .subtitle:first-of-type{
+        font-size: 20vw;
+        padding-top: 16%;
+    }
+
+    .weeklyGames {
+        flex-direction: column;
+    }
+
+    .days{
+        margin-top: -40px;
+        width: 100%;
+    }
+
+    .days:last-child{
+        margin-top: 40px;
+    }
+    .eventList h3{
+        font-size: 25px;
+    }
+
+    .eventList h1{
+        margin-top: -32px;
+        font-size: 40px;
+    }
+
+    .eventList h1:nth-child(1){
+        margin-top: 0px;
+    }
+
+    .eventBox{
+        height: 360px;
+    }
+
+    .eventBox h1{
+        font-size: 40px;
+    }
+    
+    .eventBox p{
+        font-size: 15px;
+    }
+
+    .signUpInfo {
+        width: 100%;
+        transform: scale(0.6);
+    }
+
+    .eventWrapper{
+        height: 400px;
+    }
+
+    .modal{
+        width: 100%;
+    }
+
+    .modal a h1{
+        font-size: 20px;
+    }
+    .modalRight{
+        display: none;
+    }
+
+    .modalLeft{
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .people{
+        margin: 10px;
+    }
+}
+ 

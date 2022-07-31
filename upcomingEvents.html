@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--MetaData-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gaurav Sharma" />
+    <!--Need to factcheck description-->
+    <meta
+      name="description"
+      content="Find out about our weekly and other upcoming events!"
+    />
+    <link rel="stylesheet" type="text/css" href="geeksCSS.css" />
+    <!--Info for the tab-->
+    <title>McMaster Geeks</title>
+    <link rel="icon" href="/Images/geeksLogo.png" type="image/x.icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="innerHeader">
+          <div class="logo">
+            <a href="index.html">
+              <img src="Images/geeksLogo.png" alt="Geeks logo" />
+            </a>
+            <a href="index.html" style="padding-top: 10px">McMaster Geeks</a>
+          </div>
+          <ul class="navi">
+            <li><a href="upcomingEvents.html">Upcoming Events</a></li>
+            <li><a href="pastEvents.html">Past Events</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <script src="subMenu.js"></script>
+
+      <div id="discordModal" class="modal">
+        <div
+          class="modalDialogue"
+          style="
+            margin-top: 350px;
+            height: 10%;
+            border: 3px solid white;
+            background-color: black;
+            border-radius: 20px;
+          "
+        >
+          <a href="https://discord.com/invite/nphdHjd">
+            <h2 style="text-align: left; font-size: 60px; padding: 16px">
+              Join the Discord
+            </h2>
+          </a>
+          <img src="Images/Discord.png" alt="" />
+        </div>
+      </div>
+
+      <section class="weeklies">
+        <div class="subtitle animation right">Weeklies</div>
+        <div class="weeklyGames">
+          <div class="days animation">
+            <span
+              onmouseover="daySelected('m')"
+              onmouseout="dayUnselected('m')"
+            >
+              Monday
+            </span>
+            <div class="games">
+              <div
+                class="weeklyEvent m animation left"
+                style="background-color: rgb(0, 157, 195)"
+              >
+                <div class="eventList">
+                  <h3>6:00 PM - 9:00 PM</h3>
+                  <h1>Misc.</h1>
+                </div>
+              </div>
+              <div
+                class="weeklyEvent m animation left"
+                style="background-color: rgb(0, 177, 201)"
+              >
+                <div class="eventList">
+                  <h3>STARTS 6:00 PM</h3>
+                  <h1>Anime</h1>
+                </div>
+              </div>
+              <div
+                class="weeklyEvent m animation left"
+                style="background-color: rgb(0, 184, 175)"
+              >
+                <div class="eventList">
+                  <h3>STARTS 6:30 PM</h3>
+                  <h1>Smash</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="days animation">
+            <span
+              onmouseover="daySelected('t')"
+              onmouseout="dayUnselected('t')"
+            >
+              Tuesday
+            </span>
+            <div class="games">
+              <div
+                class="weeklyEvent t animation right"
+                style="background-color: rgb(57, 199, 145)"
+              >
+                <div class="eventList">
+                  <h3>STARTS 6:30 PM</h3>
+                  <h1>DND</h1>
+                </div>
+              </div>
+              <div
+                class="weeklyEvent t animation right"
+                style="background-color: rgb(127, 209, 124)"
+              >
+                <div class="eventList">
+                  <h3>STARTS 6:30 PM</h3>
+                  <h1>TCG</h1>
+                </div>
+              </div>
+              <div
+                class="weeklyEvent t animation right"
+                style="background-color: rgb(183, 225, 86)"
+              >
+                <div class="eventList">
+                  <h3>STARTS 6:30 PM</h3>
+                  <h1>Pokémon</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="weeklyEvent animation left"
+            style="background-color: #9cc8c6; width: 50%"
+          >
+            <div class="eventList">
+              <h1 style="margin-left: -20px; text-align: center">
+                Join the Club!
+              </h1>
+            </div>
+            <span class="link">
+              <a
+                id="modalListener"
+                target="_blank"
+                href="https://store.msumcmaster.ca/product_categories/292"
+              >
+              </a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="Sign Up animation right">
+        <div class="subtitle" style="padding: 30px">Sign Ups</div>
+        <div class="eventWrapper">
+          <div class="eventBox animation" id="event1">
+            <h1>Event1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus vitae non accusantium fuga animi culpa debitis
+              asperiores laboriosam quia, mollitia quod itaque, nobis dicta ab
+              repellendus vel sint corrupti! Molestiae, eum asperiores facilis
+              numquam aliquam inventore at possimus ducimus quibusdam
+              consequatur fugiat dolorem perspiciatis, enim tenetur fuga!
+              Quaerat a aperiam quis nemo cum.
+            </p>
+          </div>
+          <div class="eventBox" id="event2">
+            <h1>Event2</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+              fugiat quos blanditiis excepturi consectetur quia velit neque
+              dolorum saepe sequi repellendus laborum adipisci ipsam
+              voluptatibus doloremque nobis earum, suscipit, iure aut eum sit
+              magnam tempore. Cumque tempora aliquid quidem quibusdam odio
+              ratione repellat aperiam, ipsa, nam, itaque pariatur delectus
+              natus?
+            </p>
+          </div>
+          <div class="eventBox" id="event3">
+            <h1>Event3</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+              et, repellendus architecto excepturi exercitationem debitis
+              nesciunt rerum non repudiandae unde quod tenetur, nostrum
+              reprehenderit? Molestias rem reprehenderit odit enim nulla
+              cupiditate, laborum, itaque nemo quaerat veritatis dolore nostrum
+              optio aliquam dolor ab adipisci minus. Deserunt, doloremque dolor.
+              Consequatur, modi.
+            </p>
+          </div>
+        </div>
+        <div class="eventWrapper" style="height: fit-content">
+          <div class="signUpInfo">
+            <div class="changeEvent">
+              <h1 style="text-align: right" onclick="updateEvent(-1)">
+                &#8249;
+              </h1>
+            </div>
+            <a href="" target="_blank" id="signUpButton">Sign Up</a>
+            <div class="changeEvent">
+              <h1 onclick="updateEvent(1)">&#8250;</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer">
+        <div class="innerFooter">
+          <p>McMaster Geeks</p>
+          <p>1280 Main St W, Hamilton, ON L8S 4L8</p>
+          <a target="_blank" href="https://www.mcmaster.ca/"
+            >McMaster Website</a
+          >
+          <a
+            target="_blank"
+            href="https://store.msumcmaster.ca/product_categories/292"
+          >
+            Join Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
