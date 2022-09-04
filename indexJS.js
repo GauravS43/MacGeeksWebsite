@@ -64,11 +64,26 @@ window.addEventListener('load', (event) => {
 //Updates eventImages based on event hovered
 eventImages = ["Images/video-games.jpeg", "Images/theatre.jpg", "Images/sGeeks.jpeg", "Images/question.jpeg", "Images/sGeeks.jpeg", "Images/theatre.jpg"];
 function updateImage(imgid) {
+  let imageURL = eventImages[imgid]
   if (imgid < 3) {
-    document.getElementById("eventImg").style.backgroundImage = String.prototype.concat("url(", eventImages[imgid], ")");
+    load(imageURL).then(() => {document.getElementById("eventImg").style.backgroundImage = `url(${imageURL})`})
     document.getElementById("modalContent").src = eventImages[imgid];
   }
   else {
-    document.getElementById("eventImgPast").style.backgroundImage = String.prototype.concat("url(", eventImages[imgid], ")");
+    load(imageURL).then(() => {document.getElementById("eventImgPast").style.backgroundImage = `url(${imageURL})`})
   }
 }
+
+function load(src) {
+  return new Promise((resolve, reject) => {
+      let image = new Image();
+      image.addEventListener('load', resolve);
+      image.addEventListener('error', reject);
+      image.src = src;
+  });
+}
+
+/*experimental loading
+load(image).then(() => {
+  body.style.backgroundImage = `url(${image})`;
+});*/

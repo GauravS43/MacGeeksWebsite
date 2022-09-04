@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-    border-top: 5px solid white;
+    border-bottom: 2px solid white;
     width: fit-content;
     margin: auto;
     color: white;
@@ -56,7 +56,6 @@ h4 {
     font-size: 3.5vmax;
     width: 35%;
     text-align: center;
-    border-top: 2px solid white;
     transition: 0.25s ease;
 }
 
@@ -380,6 +379,10 @@ h5 {
     width: 50%;
 }
 
+.modalLeft h2{
+    padding-top: 10px;
+}
+
 .modalRight{
     display: flex;
     width: 50%;
@@ -406,14 +409,20 @@ h5 {
 .modalDialogue p{
     font-family: 'Avenir';
     font-size: 20px;
-    padding: 24px;
+    padding: 12px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
+.modalLeft .description {
+    height: 80%;
+    overflow: scroll;
+    line-height: 180%;
+}
+
 .modalRight img{
-    width: 400px;
-    height: 400px;
+    width: 80%;
+    height: 95%;
     object-fit: cover;
     border-radius: 5px;
     border: 5px solid white;
@@ -813,6 +822,8 @@ h5 {
 }
 
 .people h2{
+    height: 6%;
+    font-size: 28px;
     border-top: none;
     font-family: 'Azonix';
     padding: 8px;
@@ -822,12 +833,119 @@ h5 {
     font-family: 'Avenir';
     padding: 8px;
     text-align: center;
+    margin-top: 1%;
+}
+
+/*------- Gallery Section -------*/
+
+.galleryContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(16, 5vw);
+    grid-gap: 40px;
+}
+
+.galleryItem{
+    position: relative;
+    transition: 0.1s ease;
+}
+
+.galleryItem span{
+    font-family: 'Avenir';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+}
+
+.galleryItem:hover{
+    transform: scale(1.05);
+}
+
+.galleryItem a{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.galleryEvent{
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.galleryItem:hover .galleryEvent{
+    opacity: 1;
+}
+
+.galleryItem:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.galleryItem:nth-of-type(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.galleryItem:nth-of-type(3) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.galleryItem:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.galleryItem:nth-of-type(5) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.galleryItem:nth-of-type(6) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 16;
+}
+
+.galleryItem:nth-of-type(7) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 16;
 }
 
 /*------- Mobile View Section -------*/
-.animation {
-    opacity: 0;
-}
 
 @media screen and (max-width: 1000px) {
     .logo a:last-child {
@@ -1006,11 +1124,17 @@ h5 {
 
     .modalLeft{
         width: 100%;
-        overflow: scroll;
     }
 
     .people{
         margin: 10px;
     }
+
+    .galleryItem:hover .galleryEvent{
+        opacity: 0;
+    }
 }
- 
+
+.animation {
+    opacity: 0;
+}
