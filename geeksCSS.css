@@ -236,7 +236,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: top 50% right;
-    background-image: url(../images/vgwithgrad.png);
+    background-image: url(../images/gradientImages/vgwithgrad.png);
     color: white;
     position: relative;
     align-items: center;
@@ -248,7 +248,7 @@ h5 {
 }
 
 .titleCard:nth-of-type(5){
-    background-image: url(../images/macwithgrad.png);
+    background-image: url(../images/gradientImages/macwithgrad.png);
     height: 80vh;
     background-size: 55%;
     background-position: left;
@@ -490,13 +490,18 @@ h5 {
     border: 5px solid white;
     border-radius: 40px;
     background-size: cover;
-    background-image: url(../images/questionBlock.webp);
+    background-image: url(images/upcomingEvents/questionBlock.webp);
     display: block;
     width: 40vw;
     height: 40vw;
     max-width: 575px;
     max-height: 575px;
     margin: auto;
+}
+
+#eventImgPast{
+    background-image: url(images/PastEvents/clubsfest1.jpg);
+    background-position: 50%;
 }
 
 .eventsInfo a {

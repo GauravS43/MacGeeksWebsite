@@ -139,20 +139,20 @@ const descriptions = [
 ];
 
 const images = [
-  "Images/Jenn.jpg",
-  "Images/Obada.jpg",
-  "Images/adnan.jpg",
-  "Images/Tony.jpg",
-  "Images/Vijay.jpg",
-  "Images/Carina.jpg",
-  "Images/Gaurav.jpg",
-  "Images/Sel.jpg",
-  "Images/Sufyan.jpg",
-  "Images/Jaap.jpg",
-  "Images/James.jpg",
-  "Images/noImage.png",
-  "Images/Mohid.jpg",
-  "Images/Tim.jpg"
+  "Images/Execs/Jenn.jpg",
+  "Images/Execs/Obada.jpg",
+  "Images/Execs/adnan.jpg",
+  "Images/Execs/Tony.jpg",
+  "Images/Execs/Vijay.jpg",
+  "Images/Execs/Carina.jpg",
+  "Images/Execs/Gaurav.jpg",
+  "Images/Execs/Sel.jpg",
+  "Images/Execs/Sufyan.jpg",
+  "Images/Execs/Jaap.jpg",
+  "Images/Execs/James.jpg",
+  "Images/Execs/noImage.png",
+  "Images/Execs/Mohid.jpg",
+  "Images/Execs/Tim.jpg"
 ]
 
 function personSelected(ref){
