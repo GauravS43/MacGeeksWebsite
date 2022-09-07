@@ -2,7 +2,7 @@ window.onload = function(){
   current = 0;
   lastRef = 0;
 
-  if (window.location.pathname == "/upcomingevents"){
+  if (["/upcomingevents", "/upcomingEvents.html"].includes(window.location.pathname)){
     document.getElementById(upcomingEvents[current]).style.opacity = "1";
 
     if (window.innerWidth > 800) {
@@ -10,23 +10,18 @@ window.onload = function(){
         document.getElementById("discordModal").style.display = "block";
       }
 
-      window.onclick = function (event) {
-        console.log(event)
-        if (event.target == document.getElementById("discordModal")) {
-          document.getElementById("discordModal").style.display = "none";
-        }
-      };
+      document.getElementById("discordModal").addEventListener("click", function (){
+        document.getElementById("discordModal").style.display = "none";
+      })
     }
   }
-//////////////////CHANGE THIS
-  if (window.location.pathname == "/aboutUs.html"){
+
+  if (["/aboutus", "/aboutUs.html"].includes(window.location.pathname)){
     //Modal activation and deactivation 
-    window.onclick = function (event) {
-      console.log(event)
-      if (event.target == document.getElementById("personModal")) {
-        document.getElementById("personModal").style.display = "none";
-      }
-    };
+    document.getElementById("personModal").addEventListener("click", function (){
+      document.getElementById("personModal").style.display = "none";
+    })
+
   }
 }
 
@@ -143,9 +138,28 @@ const descriptions = [
   "Hey everyone, my name is Tim and I'm getting into my second year of Comp Eng. I am an interim exec here in GEEKs where I run our weekly board game nights. I'm really excited to meet new fellow geeks and just have a fun time."
 ];
 
+const images = [
+  "Images/Jenn.jpg",
+  "Images/Obada.jpg",
+  "Images/adnan.jpg",
+  "Images/Tony.jpg",
+  "Images/Vijay.jpg",
+  "Images/Carina.jpg",
+  "Images/Gaurav.jpg",
+  "Images/Sel.jpg",
+  "Images/Sufyan.jpg",
+  "Images/Jaap.jpg",
+  "Images/James.jpg",
+  "Images/noImage.png",
+  "Images/Mohid.jpg",
+  "Images/Tim.jpg"
+]
+
 function personSelected(ref){
+  document.getElementById("desc").style.fontSize = (ref === 4) ? "15px" : "20px"
   document.getElementById("pos").textContent = positions[ref];
   document.getElementById("name").textContent = names[ref];
   document.getElementById("desc").textContent = descriptions[ref];
   document.getElementById("personModal").style.display = "block";
+  document.getElementById("execImage").src = images[ref];
 }

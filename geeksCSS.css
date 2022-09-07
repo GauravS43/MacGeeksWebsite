@@ -356,8 +356,8 @@ h5 {
 .modalDialogue {
     overflow: hidden;
     display: flex;
-    width: 700px;
-    height: 700px;
+    width: 45vw;
+    height: 45vw;
     background-color: #fefefe;
     margin-top: 32px;
     margin-left: auto;
@@ -416,7 +416,7 @@ h5 {
 
 .modalLeft .description {
     height: 80%;
-    overflow: scroll;
+    overflow-y: scroll;
     line-height: 180%;
 }
 
@@ -424,7 +424,6 @@ h5 {
     width: 80%;
     height: 95%;
     object-fit: cover;
-    border-radius: 5px;
     border: 5px solid white;
     margin: auto;
     transition: 0.25s ease;
@@ -489,9 +488,9 @@ h5 {
 
 .eImages {
     border: 5px solid white;
-    border-radius: 20px;
+    border-radius: 40px;
     background-size: cover;
-    background-image: url(../images/sGeeks.jpeg);
+    background-image: url(../images/questionBlock.webp);
     display: block;
     width: 40vw;
     height: 40vw;
@@ -818,13 +817,11 @@ h5 {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 5px;
 }
 
 .people h2{
-    height: 6%;
+    height: 5%;
     font-size: 28px;
-    border-top: none;
     font-family: 'Azonix';
     padding: 8px;
 }
@@ -1132,6 +1129,18 @@ h5 {
 
     .galleryItem:hover .galleryEvent{
         opacity: 0;
+    }
+
+    .people{
+        transform: scale(0.9);
+    }
+
+    .people h2{
+        font-size: 26px;
+    }
+
+    .people h3{
+        font-size: 50px;
     }
 }
 
