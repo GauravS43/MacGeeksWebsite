@@ -500,8 +500,8 @@ h5 {
 }
 
 #eventImgPast{
-    background-image: url(images/PastEvents/clubsfest1.jpg);
-    background-position: 50%;
+    background-image: url(images/PastEvents/clubsfest3.jpg);
+    background-position: 40%;
 }
 
 .eventsInfo a {
@@ -849,7 +849,7 @@ h5 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(16, 5vw);
+    grid-template-rows: repeat(6, 5vw);
     grid-gap: 40px;
 }
 
@@ -861,8 +861,13 @@ h5 {
 .galleryItem span{
     font-family: 'Avenir';
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    top: 2px;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 2px;
+    opacity: 0.5;
+    background-color: black;
     text-align: center;
     font-size: 150%;
 }
