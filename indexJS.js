@@ -62,7 +62,7 @@ window.addEventListener('load', (event) => {
 });
 
 //Updates eventImages based on event hovered
-eventImages = ["Images/video-games.jpeg", "Images/theatre.jpg", "Images/sGeeks.jpeg", "Images/question.jpeg", "Images/sGeeks.jpeg", "Images/theatre.jpg"];
+eventImages = ["Images/UpcomingEvents/MeetnGeek.png", "Images/UpcomingEvents/Anifest.jpeg", "Images/UpcomingEvents/SquidGeeks.png"];
 function updateImage(imgid) {
   let imageURL = eventImages[imgid]
   if (imgid < 3) {

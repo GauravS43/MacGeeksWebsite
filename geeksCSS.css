@@ -54,7 +54,7 @@ h3 {
 h4 {
     margin: 4px;
     font-size: 3.5vmax;
-    width: 35%;
+    width: 50%;
     text-align: center;
     transition: 0.25s ease;
 }
@@ -490,7 +490,7 @@ h5 {
     border: 5px solid white;
     border-radius: 40px;
     background-size: cover;
-    background-image: url(images/upcomingEvents/questionBlock.webp);
+    background-image: url(images/upcomingEvents/MeetnGeek.png);
     display: block;
     width: 40vw;
     height: 40vw;
@@ -500,7 +500,7 @@ h5 {
 }
 
 #eventImgPast{
-    background-image: url(images/PastEvents/clubsfest3.jpg);
+    background-image: url(images/PastEvents/clubsFest3.webp);
     background-position: 40%;
 }
 
