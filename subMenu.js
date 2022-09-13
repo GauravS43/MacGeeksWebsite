@@ -92,19 +92,19 @@ function dayUnselected(ref){
 }
 
 const positions = ["Co-President",
-                   "Co-President",
-                   "Vice-President",
-                   "Vice-President",
-                   "Vice-President",
-                   "Exec",
-                   "Exec",
-                   "Exec",
-                   "Exec",
-                   "Interim Exec",
-                   "Interim Exec",
-                   "Interim Exec",
-                   "Interim Exec",
-                   "Interim Exec"];
+                   "Co-President & DND",
+                   "Resource V.P",
+                   "Sponsor & Internal V.P",
+                   "External V.P & Anime",
+                   "Creative Team",
+                   "Creative Team",
+                   "Instagram Manager",
+                   "Discord Manager",
+                   "Instagram Manager",
+                   "Smash Exec",
+                   "Movies Exec",
+                   "Gaming Exec",
+                   "Board Games Exec"];
 
 const names = ["Jennifer",
                "Obada",
@@ -139,20 +139,20 @@ const descriptions = [
 ];
 
 const images = [
-  "Images/Execs/Jenn.jpg",
-  "Images/Execs/Obada.jpg",
-  "Images/Execs/adnan.jpg",
-  "Images/Execs/Tony.jpg",
-  "Images/Execs/Vijay.jpg",
-  "Images/Execs/Carina.jpg",
-  "Images/Execs/Gaurav.jpg",
-  "Images/Execs/Sel.jpg",
-  "Images/Execs/Sufyan.jpg",
-  "Images/Execs/Jaap.jpg",
-  "Images/Execs/James.jpg",
-  "Images/Execs/noImage.png",
-  "Images/Execs/Mohid.jpg",
-  "Images/Execs/Tim.jpg"
+  "Images/Execs/Jenn.webp",
+  "Images/Execs/Obada.webp",
+  "Images/Execs/adnan.webp",
+  "Images/Execs/Tony.webp",
+  "Images/Execs/Vijay.webp",
+  "Images/Execs/Carina.webp",
+  "Images/Execs/Gaurav.webp",
+  "Images/Execs/Sel.webp",
+  "Images/Execs/Sufyan.webp",
+  "Images/Execs/Jaap.webp",
+  "Images/Execs/James.webp",
+  "Images/Execs/Jasnoor.webp",
+  "Images/Execs/Mohid.webp",
+  "Images/Execs/Tim.webp"
 ]
 
 function personSelected(ref){
