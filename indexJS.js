@@ -1,5 +1,6 @@
 window.onload = function () {
   animateText();
+  animatePastImgs(0);
 
   //Modal activation and deactivation
   if (window.innerWidth > 1400) {
@@ -38,6 +39,22 @@ function animateText() {
   }
 
   setTimeout(animateText, 3000);
+}
+
+const positions = ["translateY(-100%)", "translateY(0%)", "translateY(100%)", "translateY(100%)"]
+const ids = ["pImg1", "pImg2", "pImg3", "pImg4"]
+
+function animatePastImgs(offset) {
+  for (let i = 0; i < 4; i++){
+    document.getElementById(ids[i]).style.transform = positions[(offset + i) % 4]
+    if ((offset + i) % 4 === 3){
+      document.getElementById(ids[i]).style.display = "none"
+    }
+    if ((offset + i) % 4 === 0){
+      document.getElementById(ids[i]).style.display = "block"
+    }
+  }
+  setTimeout(() => animatePastImgs(offset + 1), 5000)
 }
 
 //Animation based on scroll

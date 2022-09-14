@@ -1,7 +1,8 @@
 window.onload = function(){
   current = 0;
   lastRef = 0;
-
+  pastImageRef = 0;
+  //Modal activations and deactivations
   if (["/upcomingevents", "/upcomingEvents.html"].includes(window.location.pathname)){
     document.getElementById(upcomingEvents[current]).style.opacity = "1";
 
@@ -16,8 +17,13 @@ window.onload = function(){
     }
   }
 
+  if (['/pastevents', "/pastEvents.html"].includes(window.location.pathname)){
+    document.getElementById("imgModal").addEventListener("click", function(){
+      document.getElementById("imgModal").style.display = "none"
+    })
+  }
+
   if (["/aboutus", "/aboutUs.html"].includes(window.location.pathname)){
-    //Modal activation and deactivation 
     document.getElementById("personModal").addEventListener("click", function (){
       document.getElementById("personModal").style.display = "none";
     })
@@ -162,4 +168,21 @@ function personSelected(ref){
   document.getElementById("desc").textContent = descriptions[ref];
   document.getElementById("personModal").style.display = "block";
   document.getElementById("execImage").src = images[ref];
+}
+
+const pastImages = [
+  "Images/PastEvents/clubsFest1.webp",
+  "Images/PastEvents/clubsFest2.webp",
+  "Images/PastEvents/clubsFest3.webp",
+  "Images/PastEvents/clubsFest4.webp"
+]
+
+function imageClicked(ref){
+  document.getElementById("modalContent").src = pastImages[ref]
+  document.getElementById("imgModal").style.display = "block"
+  pastImageRef = ref
+}
+
+function pEventsModalClicked(){
+  window.open(pastImages[pastImageRef], "_blank")
 }

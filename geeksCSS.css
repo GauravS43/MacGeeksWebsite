@@ -429,6 +429,16 @@ h5 {
     transition: 0.25s ease;
 }
 
+.modal .pastImg{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
 /*------- EventInfo Sections -------*/
 
 .eventsInfo {
@@ -500,8 +510,16 @@ h5 {
 }
 
 #eventImgPast{
-    background-image: url(images/PastEvents/clubsFest3.webp);
+    background-image: none;
+    background-color: white;
     background-position: 40%;
+    overflow: hidden;
+}
+
+#eventImgPast img{
+    height: 100%;
+    position: absolute;
+    transition: 1s ease;
 }
 
 .eventsInfo a {
@@ -860,7 +878,7 @@ h5 {
 }
 
 .galleryItem span{
-    font-family: 'Avenir';
+    font-family: 'Azonix';
     position: absolute;
     top: 2px;
     border-radius: 20px;
@@ -868,9 +886,10 @@ h5 {
     margin-left: 10%;
     padding: 2px;
     opacity: 0.5;
-    background-color: black;
     text-align: center;
-    font-size: 150%;
+    font-size: 200%;
+    font-weight: 0;
+    -webkit-text-stroke: 2px black
 }
 
 .galleryItem:hover{
