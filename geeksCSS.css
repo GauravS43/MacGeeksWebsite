@@ -659,7 +659,7 @@ h5 {
     display: flex;
     margin: auto;
     flex-direction: column;
-    width: 60vmax;
+    width: 33%;
 }
 
 .days span{
@@ -688,7 +688,7 @@ h5 {
 .weeklyEvent {
     position: relative;
     display: flex;
-    width: 70%;
+    width: 90%;
     height: 150px;
     justify-content: center;
     margin: auto;
@@ -707,20 +707,28 @@ h5 {
 }
 
 .eventList h3{
-    margin-top: 8px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 70%;
     opacity: 0.8;
     text-align: left;
 }
 
 .weeklyEvent h1{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 50%;
+    font-size: 150%;
     text-align: left;
-    float: left;
 }
 
 .weeklyEvent img{
-    margin-right: 48px;
-    display: block;
-    height: 140px;
+    position: absolute;
+    height: 80%;
+    right: 10%;
+    top: 10%;
 }
 
 .weeklyEvent:hover{
@@ -974,6 +982,12 @@ h5 {
 
 /*------- Mobile View Section -------*/
 
+@media screen and (max-width: 1260px) {
+    .weeklyEvent img{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .logo a:last-child {
         content: '';
@@ -1097,20 +1111,35 @@ h5 {
     }
 
     .days{
-        margin-top: -40px;
         width: 100%;
+    }
+
+    .days span{
+        font-size: 16vmin;
     }
 
     .days:last-child{
         margin-top: 40px;
     }
+
     .eventList h3{
-        font-size: 25px;
+        font-size: 5vmin;
     }
 
     .eventList h1{
-        margin-top: -32px;
-        font-size: 40px;
+        top: 40%;
+        font-size: 15vmin 20vmax;
+    }
+
+    .eventList img{
+        display: block;
+    }
+
+    .eventList .popup{
+        position: absolute;
+        width: 100%;
+        font-size: 100%;
+        text-align: left;
     }
 
     .eventList h1:nth-child(1){
