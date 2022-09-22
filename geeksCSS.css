@@ -979,6 +979,27 @@ h5 {
     grid-row-end: 16;
 }
 */
+
+/*------- Loading View Section -------*/
+.loading{
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid #333;
+    border-top: 10px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 /*------- Mobile View Section -------*/
 
 @media screen and (max-width: 1260px) {
