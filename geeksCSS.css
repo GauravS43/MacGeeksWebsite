@@ -408,7 +408,7 @@ h5 {
 
 .modalDialogue p{
     font-family: 'Avenir';
-    font-size: 20px;
+    font-size: 130%;
     padding: 12px;
     margin-top: auto;
     margin-bottom: auto;
@@ -416,7 +416,6 @@ h5 {
 
 .modalLeft .description {
     height: 80%;
-    overflow-y: scroll;
     line-height: 180%;
 }
 
@@ -961,25 +960,25 @@ h5 {
 
 .galleryItem:nth-of-type(5) {
     grid-column-start: 1;
-    grid-column-end: 9;
+    grid-column-end: 5;
     grid-row-start: 6;
-    grid-row-end: 9;
+    grid-row-end: 8;
 }
 
 .galleryItem:nth-of-type(6) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 9;
-    grid-row-end: 16;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 8;
 }
-
+/*
 .galleryItem:nth-of-type(7) {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 9;
     grid-row-end: 16;
 }
-
+*/
 /*------- Mobile View Section -------*/
 
 @media screen and (max-width: 1260px) {

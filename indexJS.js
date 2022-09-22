@@ -41,7 +41,7 @@ function animateText() {
   setTimeout(animateText, 3000);
 }
 
-const positions = ["translateY(-100%)", "translateY(0%)", "translateY(100%)", "translateY(100%)"]
+const positions = ["translate(-10%, -100%)", "translate(-10%, 0%)", "translate(-10%, 100%)", "translate(-10%, (100%)"]
 const ids = ["pImg1", "pImg2", "pImg3", "pImg4"]
 
 function animatePastImgs(offset) {

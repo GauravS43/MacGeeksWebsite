@@ -103,12 +103,12 @@ const positions = ["Co-President",
                    "Sponsor & Internal V.P",
                    "External V.P & Anime",
                    "Creative Team",
+                   "Smash Exec",
                    "Creative Team",
+                   "Movies Exec",
                    "Instagram Manager",
                    "Discord Manager",
                    "Instagram Manager",
-                   "Smash Exec",
-                   "Movies Exec",
                    "Gaming Exec",
                    "Board Games Exec"];
 
@@ -132,7 +132,7 @@ const descriptions = [
   "My name is Obada Al-Sayed, I am the co-president of McMaster Geeks, and I believe that games are made to be shared. I am excited this year to share some of my favorites with all of you.",
   "Adnan Al-Obaidi a 4th year student in Honours of Biochemistry. I am currently responsible for the club finance. I joined McMaster Geeks to enjoy playing with other colleagues and I just enjoyed the notion of the club being comforting instead of always trying to get into competitions. I enjoy relaxing environment of the club and how it bring different communities together.",
   "Hey guys! My name is Tony, I'm heading into my 3rd year of Kinesiology and I'm currently serving as VP Admin & Sponsors. I'm excited to meet more PC / Gaming nerds in and around Mac! You'll be seeing me around at events so feel free to HMU!",
-  "Hello everyone, my name is Vijay Harakh I am a 4th year Honors Medical and Biological physics. My role in McMaster Geeks is currently VP external/anime exec. I joined cause from transitioning from high school and coming into University campus, McMaster Geeks was a great warm welcoming and is a place where I made quite a bit of friends. I both participated quite a bit in activities of the club and helped providing supplies before joining the team. I'm excited to bring the same attention as I received to many first years whether they are introverted or extroverted, I am usually great at communicating with all types of students.",
+  "Hello everyone, my name is Vijay Harakh I am a 4th year Honors Medical and Biological physics. My role in McMaster Geeks is currently VP external/anime exec. I joined cause from transitioning from high school and coming into University campus, McMaster Geeks was a great warm welcoming place where I made quite a bit of friends. I'm excited to bring the same attention I received, to many first years.",
   "Hello my name is Carina and I am going into my third year in the Biology program. I am a part of the graphic design team and initially I joined this club because I wanted to be able to create connections with others that have the same hobbies as me. I am really excited to promote this club to McMaster students through the creative works we do and having lots of fun with upcoming events!",
   "Hi, my name is Gaurav, a second-year computer science student and GEEK's Smash community leader. I joined GEEKs last year to get more involved in McMaster's community and meet more people during covid. Thankfully, these dark times are almost over. I can't wait to meet and play games with everyone this year!!",
   "Hi there! My name is Selina and I am a third year civil engineering student at Mac. I'm one of the graphic designers at GEEKS. I joined GEEKS because of my love for video games, movies and pop-culture, and by using my skills in graphic design, we are the ones helping McMaster GEEKS to present their best version possible!",
@@ -162,7 +162,6 @@ const images = [
 ]
 
 function personSelected(ref){
-  document.getElementById("desc").style.fontSize = (ref === 4) ? "15px" : "20px"
   document.getElementById("pos").textContent = positions[ref];
   document.getElementById("name").textContent = names[ref];
   document.getElementById("desc").textContent = descriptions[ref];
@@ -174,7 +173,9 @@ const pastImages = [
   "Images/PastEvents/clubsFest1.webp",
   "Images/PastEvents/clubsFest2.webp",
   "Images/PastEvents/clubsFest3.webp",
-  "Images/PastEvents/clubsFest4.webp"
+  "Images/PastEvents/DndNight3.webp",
+  "Images/PastEvents/DndNight1.webp",
+  "Images/PastEvents/DndNight2.webp"
 ]
 
 function imageClicked(ref){
