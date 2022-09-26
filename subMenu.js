@@ -144,7 +144,7 @@ const descriptions = [
   "Hi guys! I'm Jasnoor, a first year engineering student and I'm one of the Instagram Managers for McMaster Geeks. I joined to be apart of a community at school while participating in activities I enjoy, and I hope I can encourage anyone interested in McMaster Geeks to feel the same!",
   "Hey everyone, my names Mohid! I'm going into second year and am in PNB. I will be the gaming community leader this year and can't wait to bring loads of fun events and ideas throughout the year. GEEKs provides such a great environment that I can't wait to help foster for others. I'm excited to bring a focus on gaming community events centred around new releases, such as Pokémon in the upcoming months!",
   "Hey everyone, my name is Tim and I'm getting into my second year of Comp Eng. I am an interim exec here in GEEKs where I run our weekly board game nights. I'm really excited to meet new fellow geeks and just have a fun time.",
-  "Description coming soon."
+  "Konnichiwagwan, my name is Gabriel and I'll be GEEKS TCG exec this year. I'm completing my final year in the biotech program and will likely return for my masters. Gaming, Anime and TCGs have been my bread and butter for a long time so I'm looking forward to facilitate people being sent to the shadow realm!"
 ];
 
 const images = [
