@@ -1,9 +1,9 @@
-window.onload = function(){
+window.onload = function () {
   current = 0;
   lastRef = 0;
   pastImageRef = 0;
   //Modal activations and deactivations
-  if (["/upcomingevents", "/upcomingEvents.html"].includes(window.location.pathname)){
+  if (["/upcomingevents", "/upcomingEvents.html"].includes(window.location.pathname)) {
     document.getElementById(upcomingEvents[current]).style.opacity = "1";
 
     if (window.innerWidth > 800) {
@@ -11,20 +11,20 @@ window.onload = function(){
         document.getElementById("discordModal").style.display = "block";
       }
 
-      document.getElementById("discordModal").addEventListener("click", function (){
+      document.getElementById("discordModal").addEventListener("click", function () {
         document.getElementById("discordModal").style.display = "none";
       })
     }
   }
 
-  if (['/pastevents', "/pastEvents.html"].includes(window.location.pathname)){
-    document.getElementById("imgModal").addEventListener("click", function(){
+  if (['/pastevents', "/pastEvents.html"].includes(window.location.pathname)) {
+    document.getElementById("imgModal").addEventListener("click", function () {
       document.getElementById("imgModal").style.display = "none"
     })
   }
 
-  if (["/aboutus", "/aboutUs.html"].includes(window.location.pathname)){
-    document.getElementById("personModal").addEventListener("click", function (){
+  if (["/aboutus", "/aboutUs.html"].includes(window.location.pathname)) {
+    document.getElementById("personModal").addEventListener("click", function () {
       document.getElementById("personModal").style.display = "none";
     })
 
@@ -60,7 +60,7 @@ function updateEvent(ref) {
   var curEvent = document.getElementById(upcomingEvents[current]);
   var link = upcomingLinks[current];
 
-  if(ref == 1){
+  if (ref == 1) {
     removeElements(oldEvent.classList);
     oldEvent.classList.add("animateLEAVELEFT");
     removeElements(curEvent.classList);
@@ -75,7 +75,7 @@ function updateEvent(ref) {
   document.getElementById("signUpButton").href = link;
 }
 
-function removeElements(list){
+function removeElements(list) {
   var len = list.length;
   if (len > 1) {
     list.remove(list[len - 1]);
@@ -83,49 +83,51 @@ function removeElements(list){
   }
 }
 
-function daySelected(ref){
+function daySelected(ref) {
   var weeklies = document.getElementsByClassName(ref);
-  for (let i = 0; i < weeklies.length; i++){
+  for (let i = 0; i < weeklies.length; i++) {
     weeklies[i].style.boxShadow = "5px 5px white";
   }
 }
 
-function dayUnselected(ref){
+function dayUnselected(ref) {
   var weeklies = document.getElementsByClassName(ref);
-  for (let i = 0; i < weeklies.length; i++){
+  for (let i = 0; i < weeklies.length; i++) {
     weeklies[i].style.boxShadow = "";
   }
 }
 
 const positions = ["Co-President",
-                   "Co-President & DND",
-                   "Resource V.P",
-                   "Sponsor & Internal V.P",
-                   "External V.P & Anime",
-                   "Creative Team",
-                   "Smash Exec",
-                   "Creative Team",
-                   "Movies Exec",
-                   "Instagram Manager",
-                   "Discord Manager",
-                   "Instagram Manager",
-                   "Gaming Exec",
-                   "Board Games Exec"];
+  "Co-President & DND",
+  "Resource V.P",
+  "Sponsor & Internal V.P",
+  "External V.P & Anime",
+  "Creative Team",
+  "Smash Exec",
+  "Creative Team",
+  "Movies Exec",
+  "Instagram Manager",
+  "Discord Manager",
+  "Instagram Manager",
+  "Gaming Exec",
+  "Board Games Exec",
+  "TCG Exec"];
 
 const names = ["Jennifer",
-               "Obada",
-               "Adnan",
-               "Tony",
-               "Vijay",
-               "Carina",
-               "Gaurav",
-               "Selina",
-               "Sufyan",
-               "Gurjaap",
-               "James",
-               "Jasnoor",
-               "Mohid",
-               "Tim"];
+  "Obada",
+  "Adnan",
+  "Tony",
+  "Vijay",
+  "Carina",
+  "Gaurav",
+  "Selina",
+  "Sufyan",
+  "Gurjaap",
+  "James",
+  "Jasnoor",
+  "Mohid",
+  "Tim",
+  "Gabriel"];
 
 const descriptions = [
   "Hi!! I'm Jennifer! Currently in my 3rd year of Software Eng and I'll be one of your Co-Pres for this year! Super excited to be apart of Geeks, just a super chill vibe. Where else would you find a community based geeky club? We have a lot of great things planned this year, can't wait to experience them all with new and returning Geekers!",
@@ -141,7 +143,8 @@ const descriptions = [
   "Hi my name is James and I'm going into 3rd Year Mathematics and Statistics and I am the Discord Developer. I joined GEEKs because I've always enjoyed watching anime and playing video games and GEEKs has both of that so I'm very excited to join and meet new people!",
   "Hi guys! I'm Jasnoor, a first year engineering student and I'm one of the Instagram Managers for McMaster Geeks. I joined to be apart of a community at school while participating in activities I enjoy, and I hope I can encourage anyone interested in McMaster Geeks to feel the same!",
   "Hey everyone, my names Mohid! I'm going into second year and am in PNB. I will be the gaming community leader this year and can't wait to bring loads of fun events and ideas throughout the year. GEEKs provides such a great environment that I can't wait to help foster for others. I'm excited to bring a focus on gaming community events centred around new releases, such as Pokémon in the upcoming months!",
-  "Hey everyone, my name is Tim and I'm getting into my second year of Comp Eng. I am an interim exec here in GEEKs where I run our weekly board game nights. I'm really excited to meet new fellow geeks and just have a fun time."
+  "Hey everyone, my name is Tim and I'm getting into my second year of Comp Eng. I am an interim exec here in GEEKs where I run our weekly board game nights. I'm really excited to meet new fellow geeks and just have a fun time.",
+  "Description coming soon."
 ];
 
 const images = [
@@ -158,10 +161,11 @@ const images = [
   "Images/Execs/James.webp",
   "Images/Execs/Jasnoor.webp",
   "Images/Execs/Mohid.webp",
-  "Images/Execs/Tim.webp"
+  "Images/Execs/Tim.webp",
+  "Images/Execs/nophoto.jpeg"
 ]
 
-function personSelected(ref){
+function personSelected(ref) {
   document.getElementById("pos").textContent = positions[ref];
   document.getElementById("name").textContent = names[ref];
   document.getElementById("desc").textContent = descriptions[ref];
@@ -178,12 +182,12 @@ const pastImages = [
   "Images/PastEvents/DndNight2.webp"
 ]
 
-function imageClicked(ref){
+function imageClicked(ref) {
   document.getElementById("modalContent").src = pastImages[ref]
   document.getElementById("imgModal").style.display = "block"
   pastImageRef = ref
 }
 
-function pEventsModalClicked(){
+function pEventsModalClicked() {
   window.open(pastImages[pastImageRef], "_blank")
 }

@@ -19,13 +19,13 @@ body {
     color: white;
 }
 
-html { 
+html {
     background-color: black;
 }
 
 .wrapper {
     overflow-x: hidden;
-    background: url(../images/darksquare.webp) center center fixed; 
+    background: url(../images/darksquare.webp) center center fixed;
 }
 
 h1 {
@@ -114,7 +114,7 @@ h5 {
 }
 
 @keyframes exitLeft {
-    0%{
+    0% {
         opacity: 1;
     }
 
@@ -123,7 +123,7 @@ h5 {
         transform: translateX(-120%);
     }
 
-    100%{
+    100% {
         transform: translate(0);
         opacity: 0;
     }
@@ -141,7 +141,7 @@ h5 {
 }
 
 @keyframes exitRight {
-    0%{
+    0% {
         opacity: 1;
     }
 
@@ -150,11 +150,12 @@ h5 {
         transform: translateX(120%);
     }
 
-    100%{
+    100% {
         transform: translate(0);
         opacity: 0;
     }
 }
+
 /*------- Header Section -------*/
 
 .header {
@@ -247,7 +248,7 @@ h5 {
     padding: 40px;
 }
 
-.titleCard:nth-of-type(5){
+.titleCard:nth-of-type(5) {
     background-image: url(../images/gradientImages/macwithgrad.png);
     height: 80vh;
     background-size: 55%;
@@ -280,7 +281,7 @@ h5 {
 
 /*------- Scroll Section -------*/
 
-.scroll { 
+.scroll {
     display: inline-block;
     margin: auto;
     width: 100%;
@@ -292,9 +293,10 @@ h5 {
     transform: translate(0, -50%);
 }
 
-.scroll h3{
+.scroll h3 {
     padding-bottom: 40px;
 }
+
 .scroll span {
     position: absolute;
     top: 0;
@@ -313,31 +315,36 @@ h5 {
 
 @-webkit-keyframes scrollDown {
     0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
     }
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
     }
 }
-  
+
 @keyframes scrollDown {
     0% {
-      transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
     }
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
+
     100% {
-      transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
     }
 }
+
 /*------- Modal Section -------*/
 
 .modal {
@@ -367,29 +374,29 @@ h5 {
     justify-content: center;
 }
 
-.modalDialogue a{
+.modalDialogue a {
     color: white;
 }
 
-.modalDialogue a h2:hover{
+.modalDialogue a h2:hover {
     opacity: 0.8;
 }
 
-.modalLeft{
+.modalLeft {
     width: 50%;
 }
 
-.modalLeft h2{
+.modalLeft h2 {
     padding-top: 10px;
 }
 
-.modalRight{
+.modalRight {
     display: flex;
     width: 50%;
     justify-content: center;
 }
 
-.modalDialogue h1{
+.modalDialogue h1 {
     width: 100%;
     height: fit-content;
     font-family: 'Azonix';
@@ -398,7 +405,7 @@ h5 {
     text-align: center;
 }
 
-.modalDialogue h2{
+.modalDialogue h2 {
     border: none;
     text-align: center;
     margin: none;
@@ -406,7 +413,7 @@ h5 {
     margin-top: -8px;
 }
 
-.modalDialogue p{
+.modalDialogue p {
     font-family: 'Avenir';
     font-size: 130%;
     padding: 12px;
@@ -419,7 +426,7 @@ h5 {
     line-height: 180%;
 }
 
-.modalRight img{
+.modalRight img {
     width: 80%;
     height: 95%;
     object-fit: cover;
@@ -428,7 +435,8 @@ h5 {
     transition: 0.25s ease;
 }
 
-.modal .pastImg{
+.modal .pastImg {
+    height: 80%;
     width: 60%;
     position: absolute;
     top: 50%;
@@ -508,14 +516,14 @@ h5 {
     margin: auto;
 }
 
-#eventImgPast{
+#eventImgPast {
     background-image: none;
     background-color: white;
     background-position: 40%;
     overflow: hidden;
 }
 
-#eventImgPast img{
+#eventImgPast img {
     height: 100%;
     position: absolute;
     transition: 1s ease;
@@ -563,7 +571,7 @@ h5 {
     z-index: 1;
 }
 
-.subheading{
+.subheading {
     font-family: 'Avenir';
     width: 80%;
     margin-left: 10%;
@@ -645,12 +653,12 @@ h5 {
     line-height: 50%;
 }
 
-.subtitle:first-of-type{
+.subtitle:first-of-type {
     font-size: 10vw;
     padding-top: 8%;
 }
 
-.weeklies a{
+.weeklies a {
     color: white;
 }
 
@@ -661,7 +669,7 @@ h5 {
     width: 33%;
 }
 
-.days span{
+.days span {
     width: fit-content;
     margin: auto;
     font-family: 'Avenir';
@@ -670,7 +678,7 @@ h5 {
     transition: 0.25s ease-in-out;
 }
 
-.weeklyGames{
+.weeklyGames {
     display: flex;
     justify-content: center;
 }
@@ -701,11 +709,11 @@ h5 {
     transition: all .2s ease;
 }
 
-.weeklyEvent .eventList{
+.weeklyEvent .eventList {
     margin-left: 32px;
 }
 
-.eventList h3{
+.eventList h3 {
     position: absolute;
     top: 20%;
     left: 5%;
@@ -714,7 +722,7 @@ h5 {
     text-align: left;
 }
 
-.weeklyEvent h1{
+.weeklyEvent h1 {
     position: absolute;
     top: 40%;
     left: 5%;
@@ -723,34 +731,34 @@ h5 {
     text-align: left;
 }
 
-.weeklyEvent img{
+.weeklyEvent img {
     position: absolute;
     height: 80%;
     right: 10%;
     top: 10%;
 }
 
-.weeklyEvent:hover{
+.weeklyEvent:hover {
     box-shadow: 5px 5px white;
 }
 
-.link{
+.link {
     position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
 }
 
-.link a{
+.link a {
     position: absolute;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 /*------- Sign Up Section -------*/
 
-.eventWrapper{
+.eventWrapper {
     display: flex;
     justify-items: center;
     justify-content: center;
@@ -758,9 +766,9 @@ h5 {
     height: 60vh;
 }
 
-.eventBox{
+.eventBox {
     position: absolute;
-    background-color:  rgb(107, 202, 186, 0.8);
+    background-color: rgb(107, 202, 186, 0.8);
     background-attachment: fixed;
     background-position: center;
     width: 50%;
@@ -770,13 +778,13 @@ h5 {
     opacity: 0;
 }
 
-.eventBox h1{
+.eventBox h1 {
     text-align: center;
     font-family: 'Avenir';
     font-size: 4vw;
 }
 
-.eventBox p{
+.eventBox p {
     margin-top: 24px;
     font-family: 'Avenir';
     font-size: 2vw;
@@ -804,18 +812,18 @@ h5 {
     background-color: black;
 }
 
-.signUpInfo{
+.signUpInfo {
     display: flex;
     justify-content: center;
     width: 30%;
     margin-top: 8px;
 }
 
-.signUpInfo h1{
+.signUpInfo h1 {
     font-size: 100px;
 }
 
-.signUpInfo h1:hover{
+.signUpInfo h1:hover {
     opacity: 0.8;
 }
 
@@ -828,36 +836,36 @@ h5 {
     gap: 12px;
 }
 
-.flex-gap > div {
+.flex-gap>div {
     margin-top: 24px;
 }
 
-.people{
+.people {
     margin: 32px;
     border: solid 5px white;
     border-radius: 5px;
     transition: 0.15s ease;
 }
 
-.people:hover{
-  transform: scale(1.05);
-  box-shadow: 10px 10px #27BDB6;
+.people:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px #27BDB6;
 }
 
-.people img{
+.people img {
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
-.people h2{
+.people h2 {
     height: 5%;
     font-size: 28px;
     font-family: 'Azonix';
     padding: 8px;
 }
 
-.people h3{
+.people h3 {
     font-family: 'Avenir';
     padding: 8px;
     text-align: center;
@@ -879,12 +887,12 @@ h5 {
     grid-gap: 40px;
 }
 
-.galleryItem{
+.galleryItem {
     position: relative;
     transition: 0.1s ease;
 }
 
-.galleryItem span{
+.galleryItem span {
     font-family: 'Azonix';
     position: absolute;
     top: 2px;
@@ -899,11 +907,11 @@ h5 {
     -webkit-text-stroke: 2px black
 }
 
-.galleryItem:hover{
+.galleryItem:hover {
     transform: scale(1.05);
 }
 
-.galleryItem a{
+.galleryItem a {
     position: absolute;
     top: 2px;
     left: 2px;
@@ -921,12 +929,12 @@ h5 {
     border-radius: 20px;
 }
 
-.galleryEvent{
+.galleryEvent {
     opacity: 0;
     transition: 0.2s ease;
 }
 
-.galleryItem:hover .galleryEvent{
+.galleryItem:hover .galleryEvent {
     opacity: 1;
 }
 
@@ -972,6 +980,7 @@ h5 {
     grid-row-start: 6;
     grid-row-end: 8;
 }
+
 /*
 .galleryItem:nth-of-type(7) {
     grid-column-start: 5;
@@ -982,7 +991,7 @@ h5 {
 */
 
 /*------- Loading View Section -------*/
-.loading{
+.loading {
     z-index: 0.1;
     position: absolute;
     top: 50%;
@@ -995,16 +1004,21 @@ h5 {
     height: 60px;
     animation: spin 2s linear infinite;
 }
-  
+
 @keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 /*------- Mobile View Section -------*/
 
 @media screen and (max-width: 1260px) {
-    .weeklyEvent img{
+    .weeklyEvent img {
         display: none;
     }
 }
@@ -1015,7 +1029,7 @@ h5 {
         display: none;
     }
 
-    .header{
+    .header {
         width: 100%;
     }
 
@@ -1036,7 +1050,7 @@ h5 {
         padding: 2px;
     }
 
-    .eventsInfo:last-of-type{
+    .eventsInfo:last-of-type {
         flex-direction: column;
     }
 
@@ -1077,26 +1091,26 @@ h5 {
         flex-direction: column;
     }
 
-    .titleCard:nth-of-type(5){
+    .titleCard:nth-of-type(5) {
         background-size: 85%;
         background-position: top 20% center;
     }
 
-    .aboutUsLeft h1{
+    .aboutUsLeft h1 {
         width: 100%;
         text-align: center;
     }
 
-    .aboutUsLeft h3{
+    .aboutUsLeft h3 {
         width: 100%;
         text-align: center;
     }
 
-    .social{
+    .social {
         justify-content: center;
     }
 
-    .social a{
+    .social a {
         width: 32vw;
     }
 
@@ -1105,9 +1119,10 @@ h5 {
         margin-bottom: 40px;
     }
 
-    .innerFooter{
+    .innerFooter {
         width: 100%;
     }
+
     .innerFooter p {
         font-size: 10px;
     }
@@ -1117,12 +1132,12 @@ h5 {
     }
 
     /* Upcoming Events */
-    
-    .subtitle{
+
+    .subtitle {
         font-size: 75px;
     }
 
-    .subtitle:first-of-type{
+    .subtitle:first-of-type {
         font-size: 20vw;
         padding-top: 16%;
     }
@@ -1131,51 +1146,51 @@ h5 {
         flex-direction: column;
     }
 
-    .days{
+    .days {
         width: 100%;
     }
 
-    .days span{
+    .days span {
         font-size: 16vmin;
     }
 
-    .days:last-child{
+    .days:last-child {
         margin-top: 40px;
     }
 
-    .eventList h3{
+    .eventList h3 {
         font-size: 5vmin;
     }
 
-    .eventList h1{
+    .eventList h1 {
         top: 40%;
         font-size: 15vmin 20vmax;
     }
 
-    .eventList img{
+    .eventList img {
         display: block;
     }
 
-    .eventList .popup{
+    .eventList .popup {
         position: absolute;
         width: 100%;
         font-size: 100%;
         text-align: left;
     }
 
-    .eventList h1:nth-child(1){
+    .eventList h1:nth-child(1) {
         margin-top: 0px;
     }
 
-    .eventBox{
+    .eventBox {
         height: 360px;
     }
 
-    .eventBox h1{
+    .eventBox h1 {
         font-size: 40px;
     }
-    
-    .eventBox p{
+
+    .eventBox p {
         font-size: 15px;
     }
 
@@ -1184,42 +1199,43 @@ h5 {
         transform: scale(0.6);
     }
 
-    .eventWrapper{
+    .eventWrapper {
         height: 400px;
     }
 
-    .modal{
+    .modal {
         width: 100%;
     }
 
-    .modal a h1{
+    .modal a h1 {
         font-size: 20px;
     }
-    .modalRight{
+
+    .modalRight {
         display: none;
     }
 
-    .modalLeft{
+    .modalLeft {
         width: 100%;
     }
 
-    .people{
+    .people {
         margin: 10px;
     }
 
-    .galleryItem:hover .galleryEvent{
+    .galleryItem:hover .galleryEvent {
         opacity: 0;
     }
 
-    .people{
+    .people {
         transform: scale(0.9);
     }
 
-    .people h2{
+    .people h2 {
         font-size: 26px;
     }
 
-    .people h3{
+    .people h3 {
         font-size: 50px;
     }
 }
