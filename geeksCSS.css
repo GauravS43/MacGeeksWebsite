@@ -437,7 +437,8 @@ h5 {
 
 .modal .pastImg {
     height: 80%;
-    width: 60%;
+    min-width: 30%;
+    max-width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
