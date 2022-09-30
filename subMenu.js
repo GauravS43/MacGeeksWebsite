@@ -162,7 +162,7 @@ const images = [
   "Images/Execs/Jasnoor.webp",
   "Images/Execs/Mohid.webp",
   "Images/Execs/Tim.webp",
-  "Images/Execs/nophoto.jpeg"
+  "Images/Execs/gabriel.webp"
 ]
 
 function personSelected(ref) {
