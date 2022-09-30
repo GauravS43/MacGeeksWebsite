@@ -744,6 +744,15 @@ h5 {
     box-shadow: 5px 5px white;
 }
 
+.largerEvents .eventsLeft .eImages{
+    background-image: url(images/upcomingEvents/anifest.jpeg);
+}
+
+.largerEvents .eventsRight .eImages{
+    background-image: url(images/upcomingEvents/SquidGeeks.png);
+}
+
+
 .link {
     position: absolute;
     width: 100%;
