@@ -130,7 +130,7 @@ const names = ["Jennifer",
   "Gabriel"];
 
 const descriptions = [
-  "Hi!! I'm Jennifer! Currently in my 3rd year of Software Eng and I'll be one of your Co-Pres for this year! Super excited to be apart of Geeks, just a super chill vibe. Where else would you find a community based geeky club? We have a lot of great things planned this year, can't wait to experience them all with new and returning Geekers!",
+  "Hi!! I'm Jennifer! Currently in my 3rd year of Software Eng and I'll be your president for this year! Super excited to be apart of Geeks, just a super chill vibe. Where else would you find a community based geeky club? We have a lot of great things planned this year, can't wait to experience them all with new and returning Geekers!",
   "My name is Obada Al-Sayed, I am the co-president of McMaster Geeks, and I believe that games are made to be shared. I am excited this year to share some of my favorites with all of you.",
   "Adnan Al-Obaidi a 4th year student in Honours of Biochemistry. I am currently responsible for the club finance. I joined McMaster Geeks to enjoy playing with other colleagues and I just enjoyed the notion of the club being comforting instead of always trying to get into competitions. I enjoy relaxing environment of the club and how it bring different communities together.",
   "Hey guys! My name is Tony, I'm heading into my 3rd year of Kinesiology and I'm currently serving as VP Admin & Sponsors. I'm excited to meet more PC / Gaming nerds in and around Mac! You'll be seeing me around at events so feel free to HMU!",
