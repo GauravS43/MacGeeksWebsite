@@ -688,7 +688,7 @@ h5 {
     transform: translateX(-10%);
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 55vh;
     width: 120%;
     padding: auto;
     transition: .5s ease;
@@ -697,14 +697,13 @@ h5 {
 .weeklyEvent {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 150px;
     justify-content: center;
     margin: auto;
     font-family: 'Avenir';
     font-size: 40px;
     border: 4px solid white;
-    margin-top: 32px;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
@@ -729,7 +728,7 @@ h5 {
     top: 40%;
     left: 5%;
     width: 65%;
-    font-size: 150%;
+    font-size: 110%;
     text-align: left;
 }
 
@@ -744,11 +743,11 @@ h5 {
     box-shadow: 5px 5px white;
 }
 
-.largerEvents .eventsLeft .eImages{
+.largerEvents .eventsLeft .eImages {
     background-image: url(images/upcomingEvents/anifest.jpeg);
 }
 
-.largerEvents .eventsRight .eImages{
+.largerEvents .eventsRight .eImages {
     background-image: url(images/upcomingEvents/SquidGeeks.png);
 }
 
@@ -1248,6 +1247,14 @@ h5 {
 
     .people h3 {
         font-size: 50px;
+    }
+
+    .weeklyEvent {
+        width: 70%;
+    }
+
+    .boardGames {
+        margin-top: -4%;
     }
 }
 
