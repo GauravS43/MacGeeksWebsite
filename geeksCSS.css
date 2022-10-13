@@ -447,6 +447,21 @@ h5 {
     border-radius: 20px;
 }
 
+/*------- Statistics Sections -------*/
+.statisticsWrapper {
+    display: flex;
+    height: 40vh;
+    background-color: red;
+}
+
+.stat {
+    display: block;
+    height: 80%;
+    width: 20%;
+    margin: auto;
+    background-color: blue;
+}
+
 /*------- EventInfo Sections -------*/
 
 .eventsInfo {
@@ -734,9 +749,8 @@ h5 {
 
 .weeklyEvent img {
     position: absolute;
-    height: 80%;
-    right: 10%;
-    top: 10%;
+    height: 70%;
+    top: 15%;
 }
 
 .weeklyEvent:hover {
