@@ -451,15 +451,25 @@ h5 {
 .statisticsWrapper {
     display: flex;
     height: 40vh;
-    background-color: red;
 }
 
 .stat {
     display: block;
-    height: 80%;
-    width: 20%;
+    height: 70%;
+    width: 25%;
     margin: auto;
-    background-color: blue;
+}
+
+.stat h3 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Avenir';
+}
+
+.stat h1 {
+    font-family: 'Avenir';
+    text-align: center;
+    font-size: 600%;
 }
 
 /*------- EventInfo Sections -------*/

@@ -45,12 +45,12 @@ const positions = ["translate(-10%, -100%)", "translate(-10%, 0%)", "translate(-
 const ids = ["pImg1", "pImg2", "pImg3", "pImg4"]
 
 function animatePastImgs(offset) {
-  for (let i = 0; i < 4; i++){
+  for (let i = 0; i < 4; i++) {
     document.getElementById(ids[i]).style.transform = positions[(offset + i) % 4]
-    if ((offset + i) % 4 === 3){
+    if ((offset + i) % 4 === 3) {
       document.getElementById(ids[i]).style.display = "none"
     }
-    if ((offset + i) % 4 === 0){
+    if ((offset + i) % 4 === 0) {
       document.getElementById(ids[i]).style.display = "block"
     }
   }
@@ -70,6 +70,12 @@ window.addEventListener('load', (event) => {
         else
           entry.target.classList.add("animateUP");
         interObs.unobserve(entry.target);
+
+        if (entry.target.classList[0] == "statisticsWrapper") {
+          animateValue(document.getElementById("stat1"), 0, 1000, 2000);
+          animateValue(document.getElementById("stat2"), 0, 100, 2000);
+          animateValue(document.getElementById("stat3"), 0, 8, 2000);
+        }
       }
     });
   });
@@ -83,24 +89,33 @@ eventImages = ["Images/UpcomingEvents/MeetnGeek.png", "Images/UpcomingEvents/Ani
 function updateImage(imgid) {
   let imageURL = eventImages[imgid]
   if (imgid < 3) {
-    load(imageURL).then(() => {document.getElementById("eventImg").style.backgroundImage = `url(${imageURL})`})
+    load(imageURL).then(() => { document.getElementById("eventImg").style.backgroundImage = `url(${imageURL})` })
     document.getElementById("modalContent").src = eventImages[imgid];
   }
   else {
-    load(imageURL).then(() => {document.getElementById("eventImgPast").style.backgroundImage = `url(${imageURL})`})
+    load(imageURL).then(() => { document.getElementById("eventImgPast").style.backgroundImage = `url(${imageURL})` })
   }
 }
 
 function load(src) {
   return new Promise((resolve, reject) => {
-      let image = new Image();
-      image.addEventListener('load', resolve);
-      image.addEventListener('error', reject);
-      image.src = src;
+    let image = new Image();
+    image.addEventListener('load', resolve);
+    image.addEventListener('error', reject);
+    image.src = src;
   });
 }
 
-/*experimental loading
-load(image).then(() => {
-  body.style.backgroundImage = `url(${image})`;
-});*/
+//statistc loading
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
