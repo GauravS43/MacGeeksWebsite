@@ -470,7 +470,12 @@ h5 {
     font-family: 'Avenir';
     text-align: center;
     font-size: 600%;
+    background: -webkit-linear-gradient(#B6E570, #27BDB6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 /*------- EventInfo Sections -------*/
 
@@ -726,6 +731,7 @@ h5 {
     height: 150px;
     justify-content: center;
     margin: auto;
+    margin-top: 4%;
     font-family: 'Avenir';
     font-size: 40px;
     border: 4px solid white;
@@ -1282,6 +1288,15 @@ h5 {
 
     .boardGames {
         margin-top: -4%;
+    }
+
+    .statisticsWrapper {
+        height: 80vh;
+        flex-direction: column;
+    }
+
+    .stat {
+        width: 100%;
     }
 }
 
