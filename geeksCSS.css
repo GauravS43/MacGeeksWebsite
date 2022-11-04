@@ -24,6 +24,8 @@ html {
 }
 
 .wrapper {
+    position: absolute;
+    width: 100%;
     overflow-x: hidden;
     background: url(../images/darksquare.webp) center center fixed;
 }
@@ -535,6 +537,7 @@ a:visited{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateY(-10%);
+    opacity: 0.7;
 }
 
 .event:hover h5 {
@@ -785,6 +788,25 @@ a:visited{
 .largerEvents .eventsLeft .eImages {
     background-image: url(images/upcomingEvents/anifest.jpeg);
 }
+
+.largerEvents .eventsLeft .eImages a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 40px;
+    margin-left: -5px;
+    margin-top: -5px;
+    transition: 0.5s ease;
+}
+
+
+.largerEvents .eventsLeft .eImages a:hover{
+    background-color: black;
+    opacity: 0.3;
+
+}
+
 
 .largerEvents .eventsRight .eImages {
     background-image: url(images/upcomingEvents/SquidGeeks.png);

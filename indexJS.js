@@ -51,7 +51,7 @@ function animatePastImgs(offset) {
       document.getElementById(ids[i]).style.display = "none"
     }
     if ((offset + i) % 4 === 0) {
-      document.getElementById(ids[i]).style.display = "block"
+      document.getElementById(ids[i]).style.display = "flex"
     }
   }
   setTimeout(() => animatePastImgs(offset + 1), 5000)
