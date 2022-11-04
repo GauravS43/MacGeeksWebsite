@@ -41,8 +41,7 @@ function animateText() {
   setTimeout(animateText, 3000);
 }
 
-//most images look best 10% off centre
-const positions = ["translate(-110%, 0%)", "translate(-10%, 0%)", "translate(90%, 0)", "translate(90%, 0)"]
+const positions = ["translate(-100%, 0%)", "translate(0%, 0%)", "translate(100%, 0)", "translate(100%, 0)"]
 const ids = ["pImg1", "pImg2", "pImg3", "pImg4"]
 
 function animatePastImgs(offset) {
