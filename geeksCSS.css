@@ -69,6 +69,10 @@ h5 {
     transition: 0.25s ease;
 }
 
+a{
+    color: white;
+}
+
 a:visited{
     color: white;
 }
