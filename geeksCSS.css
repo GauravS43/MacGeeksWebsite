@@ -1333,6 +1333,10 @@ a:visited{
     .stat {
         width: 100%;
     }
+
+    #eventImgPast {
+        overflow: hidden;
+    }
 }
 
 .animation {
