@@ -69,6 +69,10 @@ h5 {
     transition: 0.25s ease;
 }
 
+a:visited{
+    color: white;
+}
+
 /*------- Animation Section -------*/
 
 .animateUP {
@@ -548,6 +552,7 @@ h5 {
 }
 
 #eventImgPast {
+    width: 100%;
     background-image: none;
     background-color: white;
     background-position: 40%;
@@ -560,7 +565,7 @@ h5 {
     transition: 1s ease;
 }
 
-.eventsInfo a {
+.toPage a {
     position: relative;
     text-align: center;
     color: black;
@@ -579,7 +584,7 @@ h5 {
     border-radius: 30px;
 }
 
-.eventsInfo a:hover {
+.toPage a:hover {
     color: white;
     background-color: black;
 }
@@ -727,7 +732,7 @@ h5 {
 .weeklyEvent {
     position: relative;
     display: flex;
-    width: 80%;
+    width: 95%;
     height: 150px;
     justify-content: center;
     margin: auto;
@@ -758,7 +763,7 @@ h5 {
     position: absolute;
     top: 40%;
     left: 5%;
-    width: 65%;
+    width: 75%;
     font-size: 110%;
     text-align: left;
 }
@@ -800,6 +805,36 @@ h5 {
     left: 0;
     width: 100%;
     text-align: center;
+}
+
+/*------- Future Event Section -------*/
+
+.futureEvent {
+    transition: 1s ease;
+}
+
+.eventsRight h3{
+    font-family: 'Avenir';
+    width: 90%;
+}
+
+.futureEvent span {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    z-index: 2;
+}
+
+.futureEvent:hover span {
+    display: block;
+}
+
+.futureEvent img{
+    width: 90%;
+    margin: auto;
+    border: 4px solid white;
+    border-radius: 16px;
 }
 
 /*------- Sign Up Section -------*/
@@ -1284,10 +1319,6 @@ h5 {
 
     .weeklyEvent {
         width: 70%;
-    }
-
-    .boardGames {
-        margin-top: -4%;
     }
 
     .statisticsWrapper {
