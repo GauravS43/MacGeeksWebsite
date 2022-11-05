@@ -41,20 +41,14 @@ function animateText() {
   setTimeout(animateText, 3000);
 }
 
-const positions = ["translate(-100%, 0%)", "translate(0%, 0%)", "translate(100%, 0)", "translate(100%, 0)"]
-const ids = ["pImg1", "pImg2", "pImg3", "pImg4"]
+const ids = ["pImg1", "pImg2", "pImg3", "pImg4", "pImg5", "pImg6", "pImg7", "pImg8"]
 
-function animatePastImgs(offset) {
-  for (let i = 0; i < 4; i++) {
-    document.getElementById(ids[i]).style.transform = positions[(offset + i) % 4]
-    if ((offset + i) % 4 === 3) {
-      document.getElementById(ids[i]).style.display = "none"
-    }
-    if ((offset + i) % 4 === 0) {
-      document.getElementById(ids[i]).style.display = "flex"
-    }
-  }
-  setTimeout(() => animatePastImgs(offset + 1), 5000)
+function animatePastImgs(index) {
+  document.getElementById(ids[index]).style.opacity = 1;
+  setTimeout(() => {
+    document.getElementById(ids[index]).style.opacity = 0;
+    animatePastImgs((index + 1) % 8);
+  }, 5000)
 }
 
 //Animation based on scroll

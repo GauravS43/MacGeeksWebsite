@@ -174,12 +174,12 @@ function personSelected(ref) {
 }
 
 const pastImages = [
-  "Images/PastEvents/clubsFest1.webp",
-  "Images/PastEvents/clubsFest3.webp",
-  "Images/PastEvents/fgc1.webp",
-  "Images/PastEvents/DndNight3.webp",
-  "Images/PastEvents/DndNight1.webp",
-  "Images/PastEvents/DndNight2.webp"
+  "Images/PastEvents/halloween1.webp",
+  "Images/PastEvents/halloween2.webp",
+  "Images/PastEvents/halloween3.webp",
+  "Images/PastEvents/halloween4.webp",
+  "Images/PastEvents/halloween5.webp",
+  "Images/PastEvents/halloween6.webp",
 ]
 
 function imageClicked(ref) {
