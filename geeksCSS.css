@@ -638,6 +638,14 @@ a:visited{
     margin-top: 10%;
 }
 
+.sponsorRow .imgContainer a{
+    transition: 0.25s ease;
+}
+
+.sponsorRow .imgContainer a:hover{
+    opacity: 0.8;
+}
+
 
 /*------- About Us Sections -------*/
 
@@ -832,22 +840,12 @@ a:visited{
     background-image: url(images/upcomingEvents/anifest.jpeg);
 }
 
-.largerEvents .eventsLeft .eImages a{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5px solid white;
-    border-radius: 40px;
-    margin-left: -5px;
-    margin-top: -5px;
-    transition: 0.5s ease;
+.largerEvents .eventsLeft a{
+    transition: .5s;
 }
 
-
-.largerEvents .eventsLeft .eImages a:hover{
-    background-color: black;
-    opacity: 0.3;
-
+.largerEvents .eventsLeft a:hover{
+    opacity: 0.8;
 }
 
 
