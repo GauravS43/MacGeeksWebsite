@@ -608,6 +608,7 @@ a:visited{
     opacity: 0;
     margin-top: 8%;
     width: 96%;
+    max-height: 90%;
     margin-left: 4%;
     border: 5px solid white;
     border-radius: 40px;
