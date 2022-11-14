@@ -31,25 +31,28 @@ window.onload = function () {
   }
 }
 
-window.addEventListener('load', (event) => {
-  let interObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        var len = entry.target.classList.length;
-        if (entry.target.classList[len - 1] == "left")
-          entry.target.classList.add("animateLEFT");
-        else if (entry.target.classList[len - 1] == "right")
-          entry.target.classList.add("animateRIGHT");
-        else
-          entry.target.classList.add("animateUP");
-        interObs.unobserve(entry.target);
-      }
+//Animation based on scroll
+if (window.innerWidth > 1400) {
+  window.addEventListener('load', (event) => {
+    let interObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          var len = entry.target.classList.length;
+          if (entry.target.classList[len - 1] == "left")
+            entry.target.classList.add("animateLEFT");
+          else if (entry.target.classList[len - 1] == "right")
+            entry.target.classList.add("animateRIGHT");
+          else
+            entry.target.classList.add("animateUP");
+          interObs.unobserve(entry.target);
+        }
+      });
     });
+    document.querySelectorAll('.animation').forEach(obj => {
+      interObs.observe(obj);
+    })
   });
-  document.querySelectorAll('.animation').forEach(obj => {
-    interObs.observe(obj);
-  })
-});
+}
 
 upcomingEvents = ["event1", "event2", "event3"];
 upcomingLinks = ["https://www.mcmaster.ca/", "https://www.google.com/", "https://msumcmaster.ca/initiative/mcmaster-geeks/"]
