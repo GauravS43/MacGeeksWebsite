@@ -1215,9 +1215,40 @@ a:visited {
 }
 
 /*------- Mobile View Section -------*/
-
 .animation {
     opacity: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    @keyframes goingUp {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes goingLeft {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes goingRight {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 @media screen and (max-width: 1260px) {
