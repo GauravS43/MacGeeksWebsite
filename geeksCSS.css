@@ -1154,6 +1154,7 @@ a:visited {
     width: 60px;
     height: 60px;
     animation: spin 2s linear infinite;
+    opacity: 0;
 }
 
 @keyframes spin {
@@ -1317,6 +1318,10 @@ a:visited {
         font-size: 15vmin 20vmax;
     }
 
+    #boardGames h1 {
+        top: 26%;
+    }
+
     .eventList img {
         display: block;
     }
@@ -1388,6 +1393,10 @@ a:visited {
 
     .weeklyEvent {
         width: 70%;
+    }
+
+    .weeklyEvent img {
+        top: 20%;
     }
 
     .statisticsWrapper {
