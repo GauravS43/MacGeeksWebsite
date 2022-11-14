@@ -52,31 +52,33 @@ function animatePastImgs(index) {
 }
 
 //Animation based on scroll
-window.addEventListener('load', (event) => {
-  let interObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        var len = entry.target.classList.length;
-        if (entry.target.classList[len - 1] == "left")
-          entry.target.classList.add("animateLEFT");
-        else if (entry.target.classList[len - 1] == "right")
-          entry.target.classList.add("animateRIGHT");
-        else
-          entry.target.classList.add("animateUP");
-        interObs.unobserve(entry.target);
+if (window.innerWidth > 1400) {
+  window.addEventListener('load', (event) => {
+    let interObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          var len = entry.target.classList.length;
+          if (entry.target.classList[len - 1] == "left")
+            entry.target.classList.add("animateLEFT");
+          else if (entry.target.classList[len - 1] == "right")
+            entry.target.classList.add("animateRIGHT");
+          else
+            entry.target.classList.add("animateUP");
+          interObs.unobserve(entry.target);
 
-        if (entry.target.classList[0] == "statisticsWrapper") {
-          animateValue(document.getElementById("stat1"), 0, 1000, 2000);
-          animateValue(document.getElementById("stat2"), 0, 100, 2000);
-          animateValue(document.getElementById("stat3"), 0, 8, 2000);
+          if (entry.target.classList[0] == "statisticsWrapper") {
+            animateValue(document.getElementById("stat1"), 0, 1000, 2000);
+            animateValue(document.getElementById("stat2"), 0, 100, 2000);
+            animateValue(document.getElementById("stat3"), 0, 8, 2000);
+          }
         }
-      }
+      });
     });
+    document.querySelectorAll('.animation').forEach(obj => {
+      interObs.observe(obj);
+    })
   });
-  document.querySelectorAll('.animation').forEach(obj => {
-    interObs.observe(obj);
-  })
-});
+}
 
 //Updates eventImages based on event hovered
 eventImages = ["Images/UpcomingEvents/MeetnGeek.png", "Images/UpcomingEvents/Anifest.jpeg", "Images/UpcomingEvents/SquidGeeks.png"];
