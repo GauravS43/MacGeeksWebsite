@@ -23,6 +23,11 @@ html {
     background-color: black;
 }
 
+.wrapperWrapper {
+    position: absolute;
+    width: 100%;
+}
+
 .wrapper {
     position: absolute;
     width: 100%;
@@ -547,7 +552,7 @@ a:visited {
     border: 5px solid white;
     border-radius: 40px;
     background-size: cover;
-    background-image: url(images/upcomingEvents/anifest.jpeg);
+    background-image: url(images/upcomingEvents/SquidGeeks.png);
     display: block;
     width: 40vw;
     height: 40vw;
@@ -1034,7 +1039,7 @@ a:visited {
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 5vw);
+    grid-template-rows: repeat(20, 5vw);
     grid-gap: 40px;
 }
 
@@ -1122,24 +1127,71 @@ a:visited {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 6;
-    grid-row-end: 8;
+    grid-row-end: 10;
 }
 
 .galleryItem:nth-of-type(6) {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 6;
-    grid-row-end: 8;
+    grid-row-end: 10;
 }
 
-/*
 .galleryItem:nth-of-type(7) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+
+.galleryItem:nth-of-type(8) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+
+.galleryItem:nth-of-type(9) {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+
+.galleryItem:nth-of-type(10) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 15;
+    grid-row-end: 18;
+}
+
+.galleryItem:nth-of-type(11) {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 9;
-    grid-row-end: 16;
+    grid-row-start: 15;
+    grid-row-end: 18;
 }
-*/
+
+.galleryItem:nth-of-type(12) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 18;
+    grid-row-end: 22;
+}
+
+.galleryItem:nth-of-type(13) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 18;
+    grid-row-end: 22;
+}
+
+.galleryItem:nth-of-type(14) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 18;
+    grid-row-end: 22;
+}
 
 /*------- MOBILE Gallery Section -------*/
 
@@ -1184,6 +1236,62 @@ a:visited {
         grid-column-end: 9;
         grid-row-start: 25;
         grid-row-end: 30;
+    }
+
+    .galleryItem:nth-of-type(7) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 30;
+        grid-row-end: 35;
+    }
+
+    .galleryItem:nth-of-type(8) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 35;
+        grid-row-end: 40;
+    }
+
+    .galleryItem:nth-of-type(9) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 40;
+        grid-row-end: 45;
+    }
+
+    .galleryItem:nth-of-type(10) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 45;
+        grid-row-end: 50;
+    }
+
+    .galleryItem:nth-of-type(11) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 50;
+        grid-row-end: 55;
+    }
+
+    .galleryItem:nth-of-type(12) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 55;
+        grid-row-end: 60;
+    }
+
+    .galleryItem:nth-of-type(13) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 60;
+        grid-row-end: 65;
+    }
+
+    .galleryItem:nth-of-type(14) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 65;
+        grid-row-end: 70;
     }
 }
 
