@@ -175,11 +175,19 @@ function personSelected(ref) {
 }
 
 const pastImages = [
+  "Images/PastEvents/anifest1.webp",
   "Images/PastEvents/halloween1.webp",
-  "Images/PastEvents/halloween2.webp",
-  "Images/PastEvents/halloween3.webp",
+  "Images/PastEvents/anifest4.webp",
+  "Images/PastEvents/anifest7.webp",
   "Images/PastEvents/halloween4.webp",
-  "Images/PastEvents/halloween5.webp",
+  "Images/PastEvents/anifest6.webp",
+  "Images/PastEvents/anifest8.webp",
+  "Images/PastEvents/anifest10.webp",
+  "Images/PastEvents/anifest13.webp",
+  "Images/PastEvents/anifest9.webp",
+  "Images/PastEvents/anifest5.webp",
+  "Images/PastEvents/halloween10.webp",
+  "Images/PastEvents/anifest12.webp",
   "Images/PastEvents/halloween6.webp",
 ]
 
