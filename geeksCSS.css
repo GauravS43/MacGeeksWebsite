@@ -1030,6 +1030,81 @@ a:visited {
 
 /*------- Gallery Section -------*/
 
+.dropdown {
+    position: fixed;
+    color: white;
+    font-family: 'Avenir';
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 8px;
+    font-size: 200%;
+    bottom: 1%;
+    left: 1%;
+    z-index: 1;
+    transition: 1s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdownContent {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: fixed;
+    bottom: 1%;
+    left: -100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+.dropdownContent p {
+    transition: 0.2s;
+    color: white;
+    font-family: 'Avenir';
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 8px;
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.dropdownContent p:first-of-type {
+    margin-top: 8%;
+}
+
+.dropdownContent p:nth-of-type(1):hover {
+    background-color: #008ea1;
+}
+
+.dropdownContent p:nth-of-type(2):hover {
+    background-color: #6ae0d8;
+}
+
+.dropdownContent p:nth-of-type(3):hover {
+    background-color: #65d2a4;
+}
+
+.dropdownContent p:nth-of-type(4):hover {
+    background-color: #a3e087;
+}
+
+.dropdownContent p:nth-of-type(5):hover {
+    background-color: white;
+    color: black;
+}
+
+
 .galleryContainer {
     width: 90%;
     margin: auto;
@@ -1038,8 +1113,7 @@ a:visited {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(20, 5vw);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
 }
 
@@ -1094,6 +1168,8 @@ a:visited {
     opacity: 1;
 }
 
+
+/* OLD GALLERY VIEW
 .galleryItem:nth-of-type(1) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -1193,7 +1269,7 @@ a:visited {
     grid-row-end: 22;
 }
 
-/*------- MOBILE Gallery Section -------*/
+------- MOBILE Gallery Section -------
 
 @media screen and (max-width: 1000px) {
     .galleryItem:nth-of-type(1) {
@@ -1294,7 +1370,7 @@ a:visited {
         grid-row-end: 70;
     }
 }
-
+*/
 
 /*------- Loading View Section -------*/
 .loading {
@@ -1559,6 +1635,10 @@ a:visited {
 
     .people {
         margin: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .galleryItem:hover .galleryEvent {

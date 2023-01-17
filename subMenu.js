@@ -21,6 +21,7 @@ window.onload = function () {
     document.getElementById("imgModal").addEventListener("click", function () {
       document.getElementById("imgModal").style.display = "none"
     })
+    changeGallery(3)
   }
 
   if (["/aboutus", "/aboutUs.html"].includes(window.location.pathname)) {
@@ -175,28 +176,72 @@ function personSelected(ref) {
 }
 
 const pastImages = [
-  "Images/PastEvents/anifest1.webp",
+  "Images/PastEvents/clubsfest1.webp",
+  "Images/PastEvents/clubsfest2.webp",
+  "Images/PastEvents/clubsfest3.webp",
+  "Images/PastEvents/clubsfest4.webp",
+  "Images/PastEvents/DndNight1.webp",
+  "Images/PastEvents/DndNight2.webp",
+  "Images/PastEvents/DndNight3.webp",
   "Images/PastEvents/halloween1.webp",
-  "Images/PastEvents/anifest4.webp",
-  "Images/PastEvents/anifest7.webp",
+  "Images/PastEvents/halloween2.webp",
+  "Images/PastEvents/halloween3.webp",
   "Images/PastEvents/halloween4.webp",
-  "Images/PastEvents/anifest6.webp",
-  "Images/PastEvents/anifest8.webp",
-  "Images/PastEvents/anifest10.webp",
-  "Images/PastEvents/anifest13.webp",
-  "Images/PastEvents/anifest9.webp",
-  "Images/PastEvents/anifest5.webp",
-  "Images/PastEvents/halloween10.webp",
-  "Images/PastEvents/anifest12.webp",
+  "Images/PastEvents/halloween5.webp",
   "Images/PastEvents/halloween6.webp",
+  "Images/PastEvents/halloween7.webp",
+  "Images/PastEvents/halloween8.webp",
+  "Images/PastEvents/halloween9.webp",
+  "Images/PastEvents/halloween10.webp",
+  "Images/PastEvents/halloween11.webp",
+  "Images/PastEvents/anifest1.webp",
+  "Images/PastEvents/anifest3.webp",
+  "Images/PastEvents/anifest4.webp",
+  "Images/PastEvents/anifest5.webp",
+  "Images/PastEvents/anifest6.webp",
+  "Images/PastEvents/anifest7.webp",
+  "Images/PastEvents/anifest8.webp",
+  "Images/PastEvents/anifest9.webp",
+  "Images/PastEvents/anifest12.webp",
+  "Images/PastEvents/anifest13.webp",
 ]
 
 function imageClicked(ref) {
-  document.getElementById("modalContent").src = pastImages[ref]
-  document.getElementById("imgModal").style.display = "block"
-  pastImageRef = ref
+  if (screen.width > 1000) {
+    document.getElementById("modalContent").src = pastImages[ref]
+    document.getElementById("imgModal").style.display = "block"
+    pastImageRef = ref
+  }
 }
 
 function pEventsModalClicked() {
   window.open(pastImages[pastImageRef], "_blank")
+}
+
+function showOtherEvents(obj) {
+  obj.style.left = "-100%"
+  document.getElementById("dc").style.left = "1%"
+}
+
+function hideEvents() {
+  document.getElementById("dc").style.left = "-100%"
+  document.getElementById("dd").style.left = "1%"
+}
+
+let galleryInd = [[0, 1, 2, 3], [4, 5, 6], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]]
+
+function changeGallery(display) {
+  hideEvents()
+  let images = document.getElementsByClassName("galleryItem")
+
+  let indices = galleryInd[display];
+
+  for (let i = 0; i < 31; i++) {
+    if (!indices.includes(i)) {
+      images[i].style.display = "none"
+    }
+    else {
+      images[i].style.display = "block"
+    }
+  }
 }
