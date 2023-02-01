@@ -67,8 +67,8 @@ window.addEventListener('load', (event) => {
 
         if (entry.target.classList[0] == "statisticsWrapper") {
           animateValue(document.getElementById("stat1"), 0, 1000, 2000);
-          animateValue(document.getElementById("stat2"), 0, 450, 2000);
-          animateValue(document.getElementById("stat3"), 0, 8, 2000);
+          animateValue(document.getElementById("stat2"), 0, 550, 2000);
+          animateValue(document.getElementById("stat3"), 0, 6, 2000);
         }
       }
     });
