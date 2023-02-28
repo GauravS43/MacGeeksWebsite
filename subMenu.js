@@ -103,7 +103,7 @@ const positions = ["Co-President",
   "Co-President & DND",
   "Resource V.P",
   "Sponsor & Internal V.P",
-  "External V.P & Anime",
+  "External V.P",
   "Creative Team",
   "Smash Exec",
   "Creative Team",
@@ -205,7 +205,7 @@ const images = [
 ]
 
 function personSelected(ref) {
-  document.getElementById("pos").textContent = positions[ref];
+  //document.getElementById("pos").textContent = positions[ref];
   document.getElementById("name").textContent = names[ref];
   document.getElementById("desc").textContent = descriptions[ref];
   document.getElementById("personModal").style.display = "block";
