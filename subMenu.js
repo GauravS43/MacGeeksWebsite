@@ -129,7 +129,20 @@ const names = ["Jennifer",
   "Jasnoor",
   "Mohid",
   "Tim",
-  "Gabriel"];
+  "Gabriel",
+  "Alex",
+  "Alex",
+  "Anna",
+  "Antonio",
+  "Dora",
+  "Farhan",
+  "Jack",
+  "Jason",
+  "Josh",
+  "Kevin",
+  "Nana",
+  "Sepehr"
+];
 
 const descriptions = [
   "Hi!! I'm Jennifer! Currently in my 3rd year of Software Eng and I'll be your president for this year! Super excited to be apart of Geeks, just a super chill vibe. Where else would you find a community based geeky club? We have a lot of great things planned this year, can't wait to experience them all with new and returning Geekers!",
@@ -146,7 +159,19 @@ const descriptions = [
   "Hi guys! I'm Jasnoor, a first year engineering student and I'm one of the Instagram Managers for McMaster Geeks. I joined to be apart of a community at school while participating in activities I enjoy, and I hope I can encourage anyone interested in McMaster Geeks to feel the same!",
   "Hey everyone, my names Mohid! I'm going into second year and am in PNB. I will be the gaming community leader this year and can't wait to bring loads of fun events and ideas throughout the year. GEEKs provides such a great environment that I can't wait to help foster for others. I'm excited to bring a focus on gaming community events centred around new releases, such as Pokémon in the upcoming months!",
   "Hey everyone, my name is Tim and I'm getting into my second year of Comp Eng. I am an interim exec here in GEEKs where I run our weekly board game nights. I'm really excited to meet new fellow geeks and just have a fun time.",
-  "Konnichiwagwan, my name is Gabriel and I'll be GEEKS TCG exec this year. I'm completing my final year in the biotech program and will likely return for my masters. Gaming, Anime and TCGs have been my bread and butter for a long time so I'm looking forward to facilitate people being sent to the shadow realm!"
+  "Konnichiwagwan, my name is Gabriel and I'll be GEEKS TCG exec this year. I'm completing my final year in the biotech program and will likely return for my masters. Gaming, Anime and TCGs have been my bread and butter for a long time so I'm looking forward to facilitate people being sent to the shadow realm!",
+  "Hi my name is Alex! I'm a 3rd year Chemistry student :( and the DnD Geeks Exec for this year. DnD is a passion of mine and i'm excited to meet others who also like DnD!",
+  "Hi, I'm Alex Rufenach! I'm in 4th year Electrical Engineering and I'm the FGC Community Lead. I've been watching anime and playing games for as long as I can remember and Geeks has both, so how could I not join? In-person events are the lifeblood of so many communities, and I'm excited to be a part of bringing that back to the community! Run the set!",
+  "Hi! I'm Anna, currently in 2nd year Honours Biology and I'm a General Exec at GEEKs! I joined to meet more people who also love gaming, as I'm a casual gamer myself. I'm excited to help out in all the events we have planned this year so come join if you can!",
+  "Hi! My name is Antonio, a first year in Social Science. I am the VP events for the club! I joined GEEKs to share my hobbies and interests and meet new people!",
+  "Hey everyone, I am Dora and I am in second year Commerce and I am part of the creative team! I joined McMaster Geeks so I could facilitate connections and I am excited for Squid Geeks!",
+  "Farhan.txt",
+  "Hi, I'm Jack, with the role of General Executive! I am an Exchange Student from the UK who studies Law, who joined Geeks due to wanting to help out the club which helps spread so many of my favourite hobbies and allows others to meet up and have fun. Can't wait to play with everyone!",
+  "Jason.txt",
+  "Josh.txt",
+  "Hello hello I am Kevin Debartolo, a second year student in the commerce program. I am a general exec and I joined because I was very interested and aligned with the ideas, activities and people behind GEEKS. I was very interested as soon as I read about the club and the different activities. I’m excited to involve myself in the various activities I enjoy or also trying new things, making friends, or being a contributing factor in the club.",
+  "Hello! I'm Nana, a second year in Applied Psych of Hum Behv! I joined GEEKS because I'm a massive animanga and gacha nerd, and love to do art for the things I like (I'm a part of the creatives team @ GEEKS). I can't wait to put my abilities into designing some cool things for the club!",
+  "Sepehr.txt"
 ];
 
 const images = [
@@ -154,7 +179,7 @@ const images = [
   "Images/Execs/Obada.webp",
   "Images/Execs/adnan.webp",
   "Images/Execs/Tony.webp",
-  "Images/Execs/Vijay.webp",
+  "Images/Execs/noimage.jpeg", //vijay
   "Images/Execs/Carina.webp",
   "Images/Execs/Gaurav.webp",
   "Images/Execs/Sel.webp",
@@ -164,7 +189,19 @@ const images = [
   "Images/Execs/Jasnoor.webp",
   "Images/Execs/Mohid.webp",
   "Images/Execs/Tim.webp",
-  "Images/Execs/gabriel.webp"
+  "Images/Execs/noimage.jpeg", //gabe
+  "Images/Execs/Alex_DND.webp",
+  "Images/Execs/Alex_FGC.webp",
+  "Images/Execs/Anna.webp",
+  "Images/Execs/Antonio.webp",
+  "Images/Execs/Dora.webp",
+  "Images/Execs/Farhan.webp",
+  "Images/Execs/Jack.webp",
+  "Images/Execs/Jason.webp",
+  "Images/Execs/Josh.webp",
+  "Images/Execs/Kevin.webp",
+  "Images/Execs/Nana.webp",
+  "Images/Execs/Sepehr.webp",
 ]
 
 function personSelected(ref) {
