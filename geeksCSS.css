@@ -431,7 +431,8 @@ a:visited {
 .modalDialogue p {
     font-family: 'Avenir';
     font-size: 2.5vh;
-    overflow: scroll;
+    overflow: auto;
+    -ms-overflow-style: none;
     padding: 12px;
     margin-top: auto;
     margin-bottom: auto;
