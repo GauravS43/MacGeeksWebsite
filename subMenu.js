@@ -165,13 +165,13 @@ const descriptions = [
   "Hi! I'm Anna, currently in 2nd year Honours Biology and I'm a General Exec at GEEKs! I joined to meet more people who also love gaming, as I'm a casual gamer myself. I'm excited to help out in all the events we have planned this year so come join if you can!",
   "Hi! My name is Antonio, a first year in Social Science. I am the VP events for the club! I joined GEEKs to share my hobbies and interests and meet new people!",
   "Hey everyone, I am Dora and I am in second year Commerce and I am part of the creative team! I joined McMaster Geeks so I could facilitate connections and I am excited for Squid Geeks!",
-  "Farhan.txt",
+  "Hi, I'm Farhan! I'm a 3rd-year BioPsych student and one of the board game leads. I'm always excited to meet new people and try out new games, especially the long and complicated kinds.",
   "Hi, I'm Jack, with the role of General Executive! I am an Exchange Student from the UK who studies Law, who joined Geeks due to wanting to help out the club which helps spread so many of my favourite hobbies and allows others to meet up and have fun. Can't wait to play with everyone!",
   "Jason.txt",
-  "Josh.txt",
+  "Hey! Im Josh and I am in my third year of Philosophy and Biology. I am the Anime community Lead for the year. I've always been a big fan of anime and Manga and when I learned about the Mcmaster Geeks club and their weekly events for Anime and Fgc I was very excited. I am excited to help make Anime night Weekly as cozy and enjoyable as possible and most importantly, bring people together to watch some good ass anime!",
   "Hello hello I am Kevin Debartolo, a second year student in the commerce program. I am a general exec and I joined because I was very interested and aligned with the ideas, activities and people behind GEEKS. I was very interested as soon as I read about the club and the different activities. I’m excited to involve myself in the various activities I enjoy or also trying new things, making friends, or being a contributing factor in the club.",
   "Hello! I'm Nana, a second year in Applied Psych of Hum Behv! I joined GEEKS because I'm a massive animanga and gacha nerd, and love to do art for the things I like (I'm a part of the creatives team @ GEEKS). I can't wait to put my abilities into designing some cool things for the club!",
-  "Sepehr.txt"
+  "Hi there! Most people call me Seppy. I’m in 3rd year neuroscience, and it’s my absolute pleasure to help out at Geeks as a general exec. You’d probably find me at events for smash, anime, or board games! PS. Please send any cool video essays you find my way. Can’t ever get enough of them :D"
 ];
 
 const images = [
