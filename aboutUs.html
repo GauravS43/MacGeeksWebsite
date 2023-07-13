@@ -32,140 +32,142 @@
           </ul>
         </div>
       </div>
-      <script></script>
-      <div class="subtitle animation right" style="padding-top: 100px">
-        About Us
-      </div>
-      <h1
-        class="subheading animation right"
-        style="font-size: 24px; padding-bottom: 3.5%"
-      >
-        We aim to provide a welcoming and safe community for McMaster students
-        who have interests in Tabletop, Video Games and Anime by providing
-        several casual events. Every week brings an opportunity to come in and
-        make new friends!
-      </h1>
 
-      <div id="personModal" class="modal">
-        <div
-          class="modalDialogue"
-          style="
-            width: 60%;
-            height: 55%;
-            margin-top: 160px;
-            border: 3px solid white;
-            background-color: black;
-          "
+      <div class="innerWrapper">
+        <div class="subtitle animation right" style="padding-top: 100px">
+          About Us
+        </div>
+        <h1
+          class="subheading animation right"
+          style="font-size: 24px; padding-bottom: 3.5%"
         >
-          <div class="modalLeft">
-            <h1 id="pos" style="margin-top: 12px"></h1>
-            <h2 id="name">Person Name</h2>
-            <div class="description">
-              <p id="desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                perferendis iste earum ipsum quam placeat asperiores, recusandae
-                illum, soluta officia, laborum minima quod! Error animi
-                temporibus illum doloremque, repellat maiores perspiciatis
-                eveniet. Quisquam cumque ab vel quam cum, ullam temporibus saepe
-                expedita harum aliquid, ipsam praesentium porro vero eos in
-                dolor dicta libero illo. Vero quas in sed. Nam, esse.
-              </p>
+          We aim to provide a welcoming and safe community for McMaster students
+          who have interests in Tabletop, Video Games and Anime by providing
+          several casual events. Every week brings an opportunity to come in and
+          make new friends!
+        </h1>
+  
+        <div id="personModal" class="modal">
+          <div
+            class="modalDialogue"
+            style="
+              width: 60%;
+              height: 55%;
+              margin-top: 160px;
+              border: 3px solid white;
+              background-color: black;
+            "
+          >
+            <div class="modalLeft">
+              <h1 id="pos" style="margin-top: 12px"></h1>
+              <h2 id="name">Person Name</h2>
+              <div class="description">
+                <p id="desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  perferendis iste earum ipsum quam placeat asperiores, recusandae
+                  illum, soluta officia, laborum minima quod! Error animi
+                  temporibus illum doloremque, repellat maiores perspiciatis
+                  eveniet. Quisquam cumque ab vel quam cum, ullam temporibus saepe
+                  expedita harum aliquid, ipsam praesentium porro vero eos in
+                  dolor dicta libero illo. Vero quas in sed. Nam, esse.
+                </p>
+              </div>
+            </div>
+            <div class="modalRight">
+              <img id="execImage" src="Images/noImage.png" alt="" />
             </div>
           </div>
-          <div class="modalRight">
-            <img id="execImage" src="Images/noImage.png" alt="" />
+        </div>
+  
+        <script src="subMenu.js"></script>
+  
+        <div class="flex-gap">
+          <div class="people animation" id="person" onclick="personSelected(3)">
+            <img src="Images/Execs/Tony.webp" alt="" />
+            <h2>President</h2>
+            <h3>Tony</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(13)">
+            <img src="Images/Execs/Tim.webp" alt="" />
+            <h2>V.P Finance</h2>
+            <h3>Tim</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(18)">
+            <img src="Images/Execs/Antonio.webp" alt="" />
+            <h2>V.P Events</h2>
+            <h3>Antonio</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(9)">
+            <img src="Images/Execs/Jaap.webp" alt="" />
+            <h2>V.P Internal</h2>
+            <h3>Gurjaap</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(10)">
+            <img src="Images/Execs/James.webp" alt="" />
+            <h2>V.P Admin</h2>
+            <h3>James</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(12)">
+            <img src="Images/Execs/Mohid.webp" alt="" />
+            <h2>V.P Resources</h2>
+            <h3>Mohid</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(26)">
+            <img src="Images/Execs/Sepehr.webp" alt="" />
+            <h2>V.P Marketing</h2>
+            <h3>Sepehr</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(25)">
+            <img src="Images/Execs/Nana.webp" alt="" />
+            <h2>Creative Team</h2>
+            <h3>Nana</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(14)">
+            <img src="Images/geeksLogo.png" alt="" />
+            <h2>TCG Leader</h2>
+            <h3>Gabriel</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(15)">
+            <img src="Images/Execs/Alex_DND.webp" alt="" />
+            <h2>DND Leader</h2>
+            <h3>Alex</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(20)">
+            <img src="Images/Execs/Farhan.webp" alt="" />
+            <h2>BG Leader</h2>
+            <h3>Farhan</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(23)">
+            <img src="Images/Execs/Josh.webp" alt="" />
+            <h2>Anime Leader</h2>
+            <h3>Josh</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(17)">
+            <img src="Images/Execs/Anna.webp" alt="" />
+            <h2>Exec</h2>
+            <h3>Anna</h3>
+          </div>
+          <div class="people animation" id="person" onclick="personSelected(6)">
+            <img src="Images/Execs/Gaurav.webp" alt="" />
+            <h2>Exec</h2>
+            <h3>Gaurav</h3>
           </div>
         </div>
-      </div>
-
-      <script src="subMenu.js"></script>
-
-      <div class="flex-gap">
-        <div class="people animation" id="person" onclick="personSelected(3)">
-          <img src="Images/Execs/Tony.webp" alt="" />
-          <h2>President</h2>
-          <h3>Tony</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(13)">
-          <img src="Images/Execs/Tim.webp" alt="" />
-          <h2>V.P Finance</h2>
-          <h3>Tim</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(18)">
-          <img src="Images/Execs/Antonio.webp" alt="" />
-          <h2>V.P Events</h2>
-          <h3>Antonio</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(9)">
-          <img src="Images/Execs/Jaap.webp" alt="" />
-          <h2>V.P Internal</h2>
-          <h3>Gurjaap</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(10)">
-          <img src="Images/Execs/James.webp" alt="" />
-          <h2>V.P Admin</h2>
-          <h3>James</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(12)">
-          <img src="Images/Execs/Mohid.webp" alt="" />
-          <h2>V.P Resources</h2>
-          <h3>Mohid</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(26)">
-          <img src="Images/Execs/Sepehr.webp" alt="" />
-          <h2>V.P Marketing</h2>
-          <h3>Sepehr</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(25)">
-          <img src="Images/Execs/Nana.webp" alt="" />
-          <h2>Creative Team</h2>
-          <h3>Nana</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(14)">
-          <img src="Images/geeksLogo.png" alt="" />
-          <h2>TCG Leader</h2>
-          <h3>Gabriel</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(15)">
-          <img src="Images/Execs/Alex_DND.webp" alt="" />
-          <h2>DND Leader</h2>
-          <h3>Alex</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(20)">
-          <img src="Images/Execs/Farhan.webp" alt="" />
-          <h2>BG Leader</h2>
-          <h3>Farhan</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(23)">
-          <img src="Images/Execs/Josh.webp" alt="" />
-          <h2>Anime Leader</h2>
-          <h3>Josh</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(17)">
-          <img src="Images/Execs/Anna.webp" alt="" />
-          <h2>Exec</h2>
-          <h3>Anna</h3>
-        </div>
-        <div class="people animation" id="person" onclick="personSelected(6)">
-          <img src="Images/Execs/Gaurav.webp" alt="" />
-          <h2>Exec</h2>
-          <h3>Gaurav</h3>
-        </div>
-      </div>
-
-      <div class="footer">
-        <div class="innerFooter">
-          <p>McMaster Geeks</p>
-          <p>1280 Main St W, Hamilton, ON L8S 4L8</p>
-          <a target="_blank" href="https://www.mcmaster.ca/"
-            >McMaster Website</a
-          >
-          <a
-            target="_blank"
-            href="https://store.msumcmaster.ca/product_categories/292"
-          >
-            Join Now
-          </a>
+  
+        <div class="footer">
+          <div class="innerFooter">
+            <p>McMaster Geeks</p>
+            <p>1280 Main St W, Hamilton, ON L8S 4L8</p>
+            <a target="_blank" href="https://www.mcmaster.ca/"
+              >McMaster Website</a
+            >
+            <a
+              target="_blank"
+              href="https://store.msumcmaster.ca/product_categories/292"
+            >
+              Join Now
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -35,278 +35,280 @@
 
       <script src="subMenu.js"></script>
 
-      <div id="imgModal" class="modal">
-        <div class="loading"></div>
-        <img
-          class="pastImg"
-          id="modalContent"
-          src="Images/PastEvents/halloween1.webp"
-          alt=""
-          onclick="pEventsModalClicked()"
-        />
-      </div>
-
-      <div id="dd" onclick="showOtherEvents(this)" class="dropdown">
-        <span>Change Event</span>
-      </div>
-
-      <div id="dc" class="dropdownContent">
-        <p onclick="changeGallery(0)">Clubsfest</p>
-        <p onclick="changeGallery(1)">DND Night</p>
-        <!-- No images  <p>Meet and Geek</p> -->
-        <p onclick="changeGallery(2)">Paranormal Geektivity</p>
-        <p onclick="changeGallery(3)">Anifest</p>
-        <p onclick="hideEvents()">Hide Events</p>
-      </div>
-
-
-      <div class="galleryContainer">
-        <div class="gallery">
-          <figure class="galleryItem animation">
-            <div class="loading"></div>
-            <img
-              src="Images/PastEvents/clubsfest1.webp"
-              class="galleryImg"
-              alt="Image 1"
-              onclick="imageClicked(0)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <div class="loading"></div>
-            <img
-              src="Images/PastEvents/clubsFest2.webp"
-              class="galleryImg"
-              alt="Image 2"
-              onclick="imageClicked(1)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <div class="loading"></div>
-            <img
-              src="Images/PastEvents/clubsFest3.webp"
-              class="galleryImg"
-              alt="Image 3"
-              onclick="imageClicked(2)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <div class="loading"></div>
-            <img
-              src="Images/PastEvents/clubsFest4.webp"
-              class="galleryImg"
-              alt="Image 4"
-              onclick="imageClicked(3)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <div class="loading"></div>
-            <img
-              src="Images/PastEvents/DndNight1.webp"
-              class="galleryImg"
-              alt="Image 5"
-              onclick="imageClicked(4)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <div class="loading"></div>
-            <img
-              src="Images/PastEvents/DndNight2.webp"
-              class="galleryImg"
-              alt="Image 6"
-              onclick="imageClicked(5)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/DndNight3.webp"
-              class="galleryImg"
-              alt="Image 7"
-              onclick="imageClicked(6)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween1.webp"
-              class="galleryImg"
-              alt="Image 8"
-              onclick="imageClicked(7)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween2.webp"
-              class="galleryImg"
-              alt="Image 9"
-              onclick="imageClicked(8)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween3.webp"
-              class="galleryImg"
-              alt="Image 10"
-              onclick="imageClicked(9)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween4.webp"
-              class="galleryImg"
-              alt="Image 11"
-              onclick="imageClicked(10)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween5.webp"
-              class="galleryImg"
-              alt="Image 12"
-              onclick="imageClicked(11)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween6.webp"
-              class="galleryImg"
-              alt="Image 13"
-              onclick="imageClicked(12)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween7.webp"
-              class="galleryImg"
-              alt="Image 14"
-              onclick="imageClicked(13)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween8.webp"
-              class="galleryImg"
-              alt="Image 15"
-              onclick="imageClicked(14)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween9.webp"
-              class="galleryImg"
-              alt="Image 16"
-              onclick="imageClicked(15)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween10.webp"
-              class="galleryImg"
-              alt="Image 17"
-              onclick="imageClicked(16)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/halloween11.webp"
-              class="galleryImg"
-              alt="Image 18"
-              onclick="imageClicked(17)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest1.webp"
-              class="galleryImg"
-              alt="Image 19"
-              onclick="imageClicked(18)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest3.webp"
-              class="galleryImg"
-              alt="Image 20"
-              onclick="imageClicked(19)"
-            />
-          </figure><figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest4.webp"
-              class="galleryImg"
-              alt="Image 21"
-              onclick="imageClicked(20)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest5.webp"
-              class="galleryImg"
-              alt="Image 22"
-              onclick="imageClicked(21)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest6.webp"
-              class="galleryImg"
-              alt="Image 23"
-              onclick="imageClicked(22)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest7.webp"
-              class="galleryImg"
-              alt="Image 24"
-              onclick="imageClicked(23)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest8.webp"
-              class="galleryImg"
-              alt="Image 25"
-              onclick="imageClicked(24)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest9.webp"
-              class="galleryImg"
-              alt="Image 26"
-              onclick="imageClicked(25)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest12.webp"
-              class="galleryImg"
-              alt="Image 27"
-              onclick="imageClicked(26)"
-            />
-          </figure>
-          <figure class="galleryItem animation">
-            <img
-              src="Images/PastEvents/anifest13.webp"
-              class="galleryImg"
-              alt="Image 28"
-              onclick="imageClicked(27)"
-            />
-          </figure>
+      <div class="innerWrapper">
+        <div id="imgModal" class="modal">
+          <div class="loading"></div>
+          <img
+            class="pastImg"
+            id="modalContent"
+            src="Images/PastEvents/halloween1.webp"
+            alt=""
+            onclick="pEventsModalClicked()"
+          />
         </div>
-      </div>
-
-      <div class="footer" style="padding-top: 4%">
-        <div class="innerFooter">
-          <p>McMaster Geeks</p>
-          <p>1280 Main St W, Hamilton, ON L8S 4L8</p>
-          <a target="_blank" href="https://www.mcmaster.ca/"
-            >McMaster Website</a
-          >
-          <a
-            target="_blank"
-            href="https://store.msumcmaster.ca/product_categories/292"
-          >
-            Join Now
-          </a>
+  
+        <div id="dd" onclick="showOtherEvents(this)" class="dropdown">
+          <span>Change Event</span>
+        </div>
+  
+        <div id="dc" class="dropdownContent">
+          <p onclick="changeGallery(0)">Clubsfest</p>
+          <p onclick="changeGallery(1)">DND Night</p>
+          <!-- No images  <p>Meet and Geek</p> -->
+          <p onclick="changeGallery(2)">Paranormal Geektivity</p>
+          <p onclick="changeGallery(3)">Anifest</p>
+          <p onclick="hideEvents()">Hide Events</p>
+        </div>
+  
+  
+        <div class="galleryContainer">
+          <div class="gallery">
+            <figure class="galleryItem animation">
+              <div class="loading"></div>
+              <img
+                src="Images/PastEvents/clubsfest1.webp"
+                class="galleryImg"
+                alt="Image 1"
+                onclick="imageClicked(0)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <div class="loading"></div>
+              <img
+                src="Images/PastEvents/clubsFest2.webp"
+                class="galleryImg"
+                alt="Image 2"
+                onclick="imageClicked(1)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <div class="loading"></div>
+              <img
+                src="Images/PastEvents/clubsFest3.webp"
+                class="galleryImg"
+                alt="Image 3"
+                onclick="imageClicked(2)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <div class="loading"></div>
+              <img
+                src="Images/PastEvents/clubsFest4.webp"
+                class="galleryImg"
+                alt="Image 4"
+                onclick="imageClicked(3)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <div class="loading"></div>
+              <img
+                src="Images/PastEvents/DndNight1.webp"
+                class="galleryImg"
+                alt="Image 5"
+                onclick="imageClicked(4)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <div class="loading"></div>
+              <img
+                src="Images/PastEvents/DndNight2.webp"
+                class="galleryImg"
+                alt="Image 6"
+                onclick="imageClicked(5)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/DndNight3.webp"
+                class="galleryImg"
+                alt="Image 7"
+                onclick="imageClicked(6)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween1.webp"
+                class="galleryImg"
+                alt="Image 8"
+                onclick="imageClicked(7)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween2.webp"
+                class="galleryImg"
+                alt="Image 9"
+                onclick="imageClicked(8)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween3.webp"
+                class="galleryImg"
+                alt="Image 10"
+                onclick="imageClicked(9)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween4.webp"
+                class="galleryImg"
+                alt="Image 11"
+                onclick="imageClicked(10)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween5.webp"
+                class="galleryImg"
+                alt="Image 12"
+                onclick="imageClicked(11)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween6.webp"
+                class="galleryImg"
+                alt="Image 13"
+                onclick="imageClicked(12)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween7.webp"
+                class="galleryImg"
+                alt="Image 14"
+                onclick="imageClicked(13)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween8.webp"
+                class="galleryImg"
+                alt="Image 15"
+                onclick="imageClicked(14)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween9.webp"
+                class="galleryImg"
+                alt="Image 16"
+                onclick="imageClicked(15)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween10.webp"
+                class="galleryImg"
+                alt="Image 17"
+                onclick="imageClicked(16)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/halloween11.webp"
+                class="galleryImg"
+                alt="Image 18"
+                onclick="imageClicked(17)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest1.webp"
+                class="galleryImg"
+                alt="Image 19"
+                onclick="imageClicked(18)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest3.webp"
+                class="galleryImg"
+                alt="Image 20"
+                onclick="imageClicked(19)"
+              />
+            </figure><figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest4.webp"
+                class="galleryImg"
+                alt="Image 21"
+                onclick="imageClicked(20)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest5.webp"
+                class="galleryImg"
+                alt="Image 22"
+                onclick="imageClicked(21)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest6.webp"
+                class="galleryImg"
+                alt="Image 23"
+                onclick="imageClicked(22)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest7.webp"
+                class="galleryImg"
+                alt="Image 24"
+                onclick="imageClicked(23)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest8.webp"
+                class="galleryImg"
+                alt="Image 25"
+                onclick="imageClicked(24)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest9.webp"
+                class="galleryImg"
+                alt="Image 26"
+                onclick="imageClicked(25)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest12.webp"
+                class="galleryImg"
+                alt="Image 27"
+                onclick="imageClicked(26)"
+              />
+            </figure>
+            <figure class="galleryItem animation">
+              <img
+                src="Images/PastEvents/anifest13.webp"
+                class="galleryImg"
+                alt="Image 28"
+                onclick="imageClicked(27)"
+              />
+            </figure>
+          </div>
+        </div>
+  
+        <div class="footer">
+          <div class="innerFooter">
+            <p>McMaster Geeks</p>
+            <p>1280 Main St W, Hamilton, ON L8S 4L8</p>
+            <a target="_blank" href="https://www.mcmaster.ca/"
+              >McMaster Website</a
+            >
+            <a
+              target="_blank"
+              href="https://store.msumcmaster.ca/product_categories/292"
+            >
+              Join Now
+            </a>
+          </div>
         </div>
       </div>
     </div>

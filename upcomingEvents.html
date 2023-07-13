@@ -36,256 +36,258 @@
 
       <script src="subMenu.js"></script>
 
-      <div id="discordModal" class="modal">
-        <div
-          class="modalDialogue"
-          style="
-            margin-top: 350px;
-            height: 10%;
-            border: 3px solid white;
-            background-color: black;
-            border-radius: 20px;
-          "
-        >
-          <a href="https://discord.com/invite/nphdHjd">
-            <h2 style="text-align: left; font-size: 60px; padding: 16px">
-              Join the Discord
-            </h2>
-          </a>
-          <img src="Images/SocialMedias/Discord.png" alt="" />
-        </div>
-      </div>
-
-      <section class="weeklies">
-        <div class="subtitle animation right">Weeklies</div>
-        <div class="weeklyGames">
-          <div class="days animation">
-            <span
-              onmouseover="daySelected('m')"
-              onmouseout="dayUnselected('m')"
-            >
-              Tuesday
-            </span>
-            <div class="games" style="height: 30vh">
-              <div
-                class="weeklyEvent m animation"
-                style="background-color: #04abc1"
-              >
-                <div class="eventList">
-                  <h3>6 ~ 9 PM | DSB B107</h3>
-                  <h1>Gaming</h1>
-                  <img
-                    style="right: 10%; top: 10%"
-                    src="images/Weeklies/controller.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="days animation">
-            <span
-              onmouseover="daySelected('t')"
-              onmouseout="dayUnselected('t')"
-            >
-              Wednesday
-            </span>
-            <div class="games" style="height: 30vh">
-              <div
-                class="weeklyEvent t animation"
-                style="background-color: #29c8bd"
-              >
-                <div class="eventList">
-                  <h3>6 ~ 9 PM | BSB B103</h3>
-                  <h1>Anime</h1>
-                  <img
-                    style="right: 9%; height: 65%; top: 20%"
-                    src="images/Weeklies/torii.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Second Row of Days-->
-        <div class="weeklyGames">
-          <div class="days animation">
-            <span
-              onmouseover="daySelected('th')"
-              onmouseout="dayUnselected('th')"
-            >
-              Thursday
-            </span>
-            <div class="games" style="height: 82.5vh">
-              <div
-                class="weeklyEvent th animation"
-                style="background-color: #65d2a4"
-              >
-                <div class="eventList" id="boardGames">
-                  <h3>6 ~ 9 PM | MUSC ClubSpace</h3>
-                  <h1>Board Games</h1>
-                  <img
-                    style="right: 5%; height: 65%"
-                    src="images/Weeklies/chess.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-              class="weeklyEvent th animation"
-              style="background-color: #65d2a4"
-              >
-                <div class="eventList">
-                  <h3>6 ~ 9 PM | KTH B124</h3>
-                  <h1>TCG</h1>
-                  <img style="right: 7%" src="images/Weeklies/tcg.png" alt="" />
-                </div>
-              </div>
-              <div
-                class="weeklyEvent th animation"
-                style="background-color: #65d2a4"
-              >
-                <div class="eventList">
-                  <h3>STARTS 6:30 PM | BSB 105</h3>
-                  <h1>Smash</h1>
-                  <img
-                    style="right: 4%"
-                    src="images/Weeklies/smash.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="days animation">
-            <span
-              onmouseover="daySelected('f')"
-              onmouseout="dayUnselected('f')"
-            >
-              Friday
-            </span>
-            <div class="games" style="height: 82.5vh">
-              <div
-                class="weeklyEvent f animation"
-                style="background-color: #a3e087"
-              >
-                <div class="eventList">
-                  <h3>6 ~ 9 PM | BSB 138</h3>
-                  <h1>DND</h1>
-                  <img style="right: 8%" src="images/Weeklies/dnd.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <!--Club Join Button-->
+      <div class="innerWrapper">
+        <div id="discordModal" class="modal">
           <div
-            class="weeklyEvent animation"
+            class="modalDialogue"
             style="
-              background-color: #9cc8c6;
-              width: 50%;
-              margin-top: 2%;
-              margin-bottom: 2%;
+              margin-top: 350px;
+              height: 10%;
+              border: 3px solid white;
+              background-color: black;
+              border-radius: 20px;
             "
           >
-            <div class="eventList">
-              <h1 class="popup">Join the Club!</h1>
-            </div>
-            <span class="link">
-              <a
-                id="modalListener"
-                target="_blank"
-                href="https://store.msumcmaster.ca/product_categories/292"
-              >
-              </a>
-            </span>
+            <a href="https://discord.com/invite/nphdHjd">
+              <h2 style="text-align: left; font-size: 60px; padding: 16px">
+                Join the Discord
+              </h2>
+            </a>
+            <img src="Images/SocialMedias/Discord.png" alt="" />
           </div>
         </div>
-      </section>
-
-      <section class="largerEvents">
-        <div class="subtitle animation right" style="padding-top: 0%">
-          Upcoming
-        </div>
-        <section class="eventsInfo">
-          <div class="eventsRight">
-            <div class="eImages animation right"></div>
+  
+        <section class="weeklies">
+          <div class="subtitle animation right">Weeklies</div>
+          <div class="weeklyGames">
+            <div class="days animation">
+              <span
+                onmouseover="daySelected('m')"
+                onmouseout="dayUnselected('m')"
+              >
+                Tuesday
+              </span>
+              <div class="games">
+                <div
+                  class="weeklyEvent m animation"
+                  style="background-color: #04abc1"
+                >
+                  <div class="eventList">
+                    <h3>6 ~ 9 PM | DSB B107</h3>
+                    <h1>Gaming</h1>
+                    <img
+                      style="right: 10%; top: 10%"
+                      src="images/Weeklies/controller.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="days animation">
+              <span
+                onmouseover="daySelected('t')"
+                onmouseout="dayUnselected('t')"
+              >
+                Wednesday
+              </span>
+              <div class="games">
+                <div
+                  class="weeklyEvent t animation"
+                  style="background-color: #29c8bd"
+                >
+                  <div class="eventList">
+                    <h3>6 ~ 9 PM | BSB B103</h3>
+                    <h1>Anime</h1>
+                    <img
+                      style="right: 9%; height: 65%; top: 20%"
+                      src="images/Weeklies/torii.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Second Row of Days-->
+          <div class="weeklyGames">
+            <div class="days animation">
+              <span
+                onmouseover="daySelected('th')"
+                onmouseout="dayUnselected('th')"
+              >
+                Thursday
+              </span>
+              <div class="games multiple">
+                <div
+                  class="weeklyEvent th animation"
+                  style="background-color: #65d2a4"
+                >
+                  <div class="eventList" id="boardGames">
+                    <h3>6 ~ 9 PM | MUSC ClubSpace</h3>
+                    <h1>Board Games</h1>
+                    <img
+                      style="right: 5%; height: 65%"
+                      src="images/Weeklies/chess.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                class="weeklyEvent th animation"
+                style="background-color: #65d2a4"
+                >
+                  <div class="eventList">
+                    <h3>6 ~ 9 PM | KTH B124</h3>
+                    <h1>TCG</h1>
+                    <img style="right: 7%" src="images/Weeklies/tcg.png" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="weeklyEvent th animation"
+                  style="background-color: #65d2a4"
+                >
+                  <div class="eventList">
+                    <h3>STARTS 6:30 PM | BSB 105</h3>
+                    <h1>Smash</h1>
+                    <img
+                      style="right: 4%"
+                      src="images/Weeklies/smash.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="days animation">
+              <span
+                onmouseover="daySelected('f')"
+                onmouseout="dayUnselected('f')"
+              >
+                Friday
+              </span>
+              <div class="games multiple">
+                <div
+                  class="weeklyEvent f animation"
+                  style="background-color: #a3e087"
+                >
+                  <div class="eventList">
+                    <h3>6 ~ 9 PM | BSB 138</h3>
+                    <h1>DND</h1>
+                    <img style="right: 8%" src="images/Weeklies/dnd.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!--Club Join Button-->
+            <div
+              class="weeklyEvent animation"
+              style="
+                background-color: #9cc8c6;
+                width: 50%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+              "
+            >
+              <div class="eventList">
+                <h1 class="popup">Join the Club!</h1>
+              </div>
+              <span class="link">
+                <a
+                  id="modalListener"
+                  target="_blank"
+                  href="https://store.msumcmaster.ca/product_categories/292"
+                >
+                </a>
+              </span>
+            </div>
           </div>
         </section>
-      </section>
-
-      <!--SIGN UP SECTION TO BE ADDED LATER
-      <section class="Sign Up animation right">
-        <div class="subtitle" style="padding: 30px">Sign Ups</div>
-        <div class="eventWrapper">
-          <div class="eventBox animation" id="event1">
-            <h1>Event1</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusamus vitae non accusantium fuga animi culpa debitis
-              asperiores laboriosam quia, mollitia quod itaque, nobis dicta ab
-              repellendus vel sint corrupti! Molestiae, eum asperiores facilis
-              numquam aliquam inventore at possimus ducimus quibusdam
-              consequatur fugiat dolorem perspiciatis, enim tenetur fuga!
-              Quaerat a aperiam quis nemo cum.
-            </p>
+  
+        <section class="largerEvents">
+          <div class="subtitle animation right" style="padding-top: 0%">
+            Upcoming
           </div>
-          <div class="eventBox" id="event2">
-            <h1>Event2</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
-              fugiat quos blanditiis excepturi consectetur quia velit neque
-              dolorum saepe sequi repellendus laborum adipisci ipsam
-              voluptatibus doloremque nobis earum, suscipit, iure aut eum sit
-              magnam tempore. Cumque tempora aliquid quidem quibusdam odio
-              ratione repellat aperiam, ipsa, nam, itaque pariatur delectus
-              natus?
-            </p>
-          </div>
-          <div class="eventBox" id="event3">
-            <h1>Event3</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-              et, repellendus architecto excepturi exercitationem debitis
-              nesciunt rerum non repudiandae unde quod tenetur, nostrum
-              reprehenderit? Molestias rem reprehenderit odit enim nulla
-              cupiditate, laborum, itaque nemo quaerat veritatis dolore nostrum
-              optio aliquam dolor ab adipisci minus. Deserunt, doloremque dolor.
-              Consequatur, modi.
-            </p>
-          </div>
-        </div>
-        <div class="eventWrapper" style="height: fit-content">
-          <div class="signUpInfo">
-            <div class="changeEvent">
-              <h1 style="text-align: right" onclick="updateEvent(-1)">
-                &#8249;
-              </h1>
+          <section class="eventsInfo">
+            <div class="eventsRight">
+              <div class="eImages animation right"></div>
             </div>
-            <a href="" target="_blank" id="signUpButton">Sign Up</a>
-            <div class="changeEvent">
-              <h1 onclick="updateEvent(1)">&#8250;</h1>
+          </section>
+        </section>
+  
+        <!--SIGN UP SECTION TO BE ADDED LATER
+        <section class="Sign Up animation right">
+          <div class="subtitle" style="padding: 30px">Sign Ups</div>
+          <div class="eventWrapper">
+            <div class="eventBox animation" id="event1">
+              <h1>Event1</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus vitae non accusantium fuga animi culpa debitis
+                asperiores laboriosam quia, mollitia quod itaque, nobis dicta ab
+                repellendus vel sint corrupti! Molestiae, eum asperiores facilis
+                numquam aliquam inventore at possimus ducimus quibusdam
+                consequatur fugiat dolorem perspiciatis, enim tenetur fuga!
+                Quaerat a aperiam quis nemo cum.
+              </p>
+            </div>
+            <div class="eventBox" id="event2">
+              <h1>Event2</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+                fugiat quos blanditiis excepturi consectetur quia velit neque
+                dolorum saepe sequi repellendus laborum adipisci ipsam
+                voluptatibus doloremque nobis earum, suscipit, iure aut eum sit
+                magnam tempore. Cumque tempora aliquid quidem quibusdam odio
+                ratione repellat aperiam, ipsa, nam, itaque pariatur delectus
+                natus?
+              </p>
+            </div>
+            <div class="eventBox" id="event3">
+              <h1>Event3</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+                et, repellendus architecto excepturi exercitationem debitis
+                nesciunt rerum non repudiandae unde quod tenetur, nostrum
+                reprehenderit? Molestias rem reprehenderit odit enim nulla
+                cupiditate, laborum, itaque nemo quaerat veritatis dolore nostrum
+                optio aliquam dolor ab adipisci minus. Deserunt, doloremque dolor.
+                Consequatur, modi.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-      -->
-
-      <div class="footer">
-        <div class="innerFooter">
-          <p>McMaster Geeks</p>
-          <p>1280 Main St W, Hamilton, ON L8S 4L8</p>
-          <a target="_blank" href="https://www.mcmaster.ca/"
-            >McMaster Website</a
-          >
-          <a
-            target="_blank"
-            href="https://store.msumcmaster.ca/product_categories/292"
-          >
-            Join Now
-          </a>
+          <div class="eventWrapper" style="height: fit-content">
+            <div class="signUpInfo">
+              <div class="changeEvent">
+                <h1 style="text-align: right" onclick="updateEvent(-1)">
+                  &#8249;
+                </h1>
+              </div>
+              <a href="" target="_blank" id="signUpButton">Sign Up</a>
+              <div class="changeEvent">
+                <h1 onclick="updateEvent(1)">&#8250;</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        -->
+  
+        <div class="footer">
+          <div class="innerFooter">
+            <p>McMaster Geeks</p>
+            <p>1280 Main St W, Hamilton, ON L8S 4L8</p>
+            <a target="_blank" href="https://www.mcmaster.ca/"
+              >McMaster Website</a
+            >
+            <a
+              target="_blank"
+              href="https://store.msumcmaster.ca/product_categories/292"
+            >
+              Join Now
+            </a>
+          </div>
         </div>
       </div>
     </div>
