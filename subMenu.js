@@ -189,7 +189,7 @@ const images = [
   "Images/Execs/Jasnoor.webp",
   "Images/Execs/Mohid.webp",
   "Images/Execs/Tim.webp",
-  "Images/Execs/noimage.jpeg", //gabe
+  "Images/geekslogo.png", //gabe
   "Images/Execs/Alex_DND.webp",
   "Images/Execs/Alex_FGC.webp",
   "Images/Execs/Anna.webp",
