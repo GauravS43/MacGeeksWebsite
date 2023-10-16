@@ -67,7 +67,7 @@ window.addEventListener('load', (event) => {
 
         if (entry.target.classList[0] == "statisticsWrapper") {
           animateValue(document.getElementById("stat1"), 0, 1000, 2000);
-          animateValue(document.getElementById("stat2"), 0, 550, 2000);
+          animateValue(document.getElementById("stat2"), 0, 650, 2000);
           animateValue(document.getElementById("stat3"), 0, 6, 2000);
         }
       }
@@ -79,7 +79,7 @@ window.addEventListener('load', (event) => {
 });
 
 //Updates eventImages based on event hovered
-eventImages = ["Images/UpcomingEvents/MeetnGeek.png", "Images/UpcomingEvents/Anifest.jpeg", "Images/UpcomingEvents/SquidGeeks.png"];
+eventImages = ["Images/UpcomingEvents/MeetnGeek.png", "Images/UpcomingEvents/Anifest.jpeg", "Images/UpcomingEvents/scavengerHunt.png"];
 function updateImage(imgid) {
   let imageURL = eventImages[imgid]
   if (imgid < 3) {
@@ -100,7 +100,7 @@ function load(src) {
   });
 }
 
-//statistc loading
+//statistic loading
 function animateValue(obj, start, end, duration) {
   let startTimestamp = null;
   const step = (timestamp) => {
