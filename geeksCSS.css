@@ -1256,15 +1256,24 @@ input {
     border-radius: 20px 20px;
 }
 
+#passSubmit {
+    background-color: #2596be;
+    border: 2px solid white;
+    color: white;
+}
+
 #mapButton {
     font-family: Avenir;
     display: block;
-    margin-left: 25%;
+    margin-left: 22%;
     margin-top: 40px;
     border-radius: 20px;
+    padding: 2%;
     width: 50%;
     text-align: center;
     font-size: 30px;
+    background-color: #2596be;
+    border: 2px solid white;
 }
 
 /* OLD GALLERY VIEW
