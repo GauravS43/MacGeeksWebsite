@@ -79,9 +79,10 @@ window.addEventListener('load', (event) => {
 });
 
 //Updates eventImages based on event hovered
-eventImages = ["Images/UpcomingEvents/MeetnGeek.png", "Images/UpcomingEvents/Anifest.jpeg", "Images/UpcomingEvents/scavengerHunt.png"];
+eventImages = ["Images/UpcomingEvents/MeetnGeek.png", "Images/UpcomingEvents/Anifest.jpeg", "Images/UpcomingEvents/anifest2023.jpeg"];
 function updateImage(imgid) {
   let imageURL = eventImages[imgid]
+  console.log(imageURL)
   if (imgid < 3) {
     load(imageURL).then(() => { document.getElementById("eventImg").style.backgroundImage = `url(${imageURL})` })
     document.getElementById("modalContent").src = eventImages[imgid];
