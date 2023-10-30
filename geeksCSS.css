@@ -1195,25 +1195,41 @@ a:visited {
 /* BINGO */
 .grid-container {
     display: grid;
-    background-image: url(../images/gradientImages/gridGradient.webp);
+    background-image: url(../images/gradientImages/bingoGradient.webp);
     background-size: cover;
     background-position: center;
     max-width: 100%;
     grid-template-columns: repeat(4, 2fr);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 30px 30px;
     padding: 10px;
     margin: 5px;
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     border: 2px solid black;
     padding: 4px;
     font-size: 15px;
+    font-weight: 400;
     font-family: avenir;
-    color: #333;
     text-align: center;
+}
+
+.grid-item:nth-of-type(1) {
+    border-radius: 20px 0px 0px 0px;
+}
+
+.grid-item:nth-of-type(4) {
+    border-radius: 0px 20px 0px 0px;
+}
+
+.grid-item:nth-of-type(13) {
+    border-radius: 0px 0px 0px 20px;
+}
+
+.grid-item:nth-of-type(16) {
+    border-radius: 0px 0px 20px 0px;
 }
 
 #passForm {
@@ -1236,7 +1252,7 @@ input {
     margin-left: 30%;
     text-align: center;
     font-family: Avenir;
-    font-size: 40px;
+    font-size: 30px;
     border-radius: 20px 20px;
 }
 
