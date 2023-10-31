@@ -1204,11 +1204,13 @@ a:visited {
     border-radius: 30px 30px;
     padding: 10px;
     margin: 5px;
+    transition: 1s ease;
 }
 
 .grid-item {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+    max-width: 100%;
     padding: 4px;
     font-size: 15px;
     font-weight: 400;
@@ -1265,7 +1267,7 @@ input {
 #mapButton {
     font-family: Avenir;
     display: block;
-    margin-left: 22%;
+    margin-left: 23%;
     margin-top: 40px;
     border-radius: 20px;
     padding: 2%;

@@ -22,6 +22,7 @@ window.onload = function () {
                 document.cookie = "grid" + i + "=false";
             }
             else if (getCookieValue("grid" + i) == "true") {
+                document.getElementById("grid" + i).style.opacity = 0;
                 document.getElementById("grid" + i).innerHTML = "X";
             }
 
@@ -34,7 +35,7 @@ window.onload = function () {
     }
 }
 
-passcodes = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p"]
+passcodes = ["Art!", "EVA", "FBFORM", "LEMONS", "LEFTRIGHT", "ORANGEPICCOLO", "3ESTELLAS", "KAHOOT", "SOCIALSFOL", "ONIGIRIMATCHA", "WINGS", "GO", "MEMBERS", "MIKU", "OUTREACH", "GAMBLING??"]
 
 
 
@@ -45,7 +46,7 @@ document.getElementById("passForm").addEventListener("submit", (e) => {
 
     if (passcode.value == passcodes[id - 1]) {
         alert("Correct!");
-        document.getElementById("grid" + id).innerHTML = "X";
+        document.getElementById("grid" + id).style.opacity = 0;
         document.cookie = "grid" + id + "=true";
         passcode.value = "";
     } else {
