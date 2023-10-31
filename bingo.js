@@ -28,6 +28,7 @@ window.onload = function () {
 
 
             document.getElementById("grid" + i).onclick = function () {
+                id = i
                 letters = ["A", "B", "C", "D"]
                 numbers = ["4", "1", "2", "3",]
                 passTitle.innerHTML = "Passcode for " + letters[Math.floor((i - 1) / 4)] + numbers[i % 4].toString()
@@ -36,7 +37,7 @@ window.onload = function () {
     }
 }
 
-passcodes = ["Art!", "EVA", "FBFORM", "LEMONS", "LEFTRIGHT", "ORANGEPICCOLO", "3ESTELLAS", "KAHOOT", "SOCIALSFOL", "ONIGIRIMATCHA", "WINGS", "GO", "MEMBERS", "MIKU", "OUTREACH", "GAMBLING??"]
+passcodes = ["ART!", "EVA", "FBFORM", "LEMONS", "LEFTRIGHT", "ORANGEPICCOLO", "3ESTELLAS", "KAHOOT", "SOCIALSFOL", "ONIGIRIMATCHA", "WINGS", "GO", "MEMBERS", "MIKU", "OUTREACH", "GAMBLING??"]
 
 
 
