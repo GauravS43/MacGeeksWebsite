@@ -23,13 +23,14 @@ window.onload = function () {
             }
             else if (getCookieValue("grid" + i) == "true") {
                 document.getElementById("grid" + i).style.opacity = 0;
-                document.getElementById("grid" + i).innerHTML = "X";
+                //document.getElementById("grid" + i).innerHTML = "X";
             }
 
 
             document.getElementById("grid" + i).onclick = function () {
-                id = i
-                passTitle.innerHTML = "Passcode for Q".concat(i.toString())
+                letters = ["A", "B", "C", "D"]
+                numbers = ["4", "1", "2", "3",]
+                passTitle.innerHTML = "Passcode for " + letters[Math.floor((i - 1) / 4)] + numbers[i % 4].toString()
             }
         }
     }
