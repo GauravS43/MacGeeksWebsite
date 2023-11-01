@@ -58,6 +58,7 @@ document.getElementById("passForm").addEventListener("submit", (e) => {
         document.getElementById("grid" + id).style.opacity = 0;
         document.cookie = "grid" + id + "=true";
         passcode.value = "";
+        bingoArr[Math.floor((id - 1) / 4)][(id - 1) % 4] = 1;
         updateScore();
     } else {
         alert("Incorrect!");
@@ -83,5 +84,6 @@ function updateScore() {
     if (bingoArr[0][3] && bingoArr[1][2] && bingoArr[2][1] && bingoArr[3][0]) {
         tickets++
     }
+    console.log(tickets)
     document.getElementById("ticketCounter").innerHTML = "Tickets Won: " + tickets;
 }
