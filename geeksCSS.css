@@ -1238,6 +1238,13 @@ a:visited {
     width: 100%;
 }
 
+#passForm h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Azonix;
+}
+
 label {
     margin-top: 20px;
     display: block;

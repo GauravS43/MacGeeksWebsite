@@ -1,7 +1,14 @@
-id = 0;
+let id = 0;
 console.log(document.cookie)
 missingCookies = !document.cookie
 console.log(missingCookies)
+
+let bingoArr = [
+    [0, 0, 0, 0]
+    , [0, 0, 0, 0]
+    , [0, 0, 0, 0]
+    , [0, 0, 0, 0]
+]
 
 function getCookieValue(name) {
     const regex = new RegExp(`(^| )${name}=([^;]+)`)
@@ -23,15 +30,15 @@ window.onload = function () {
             }
             else if (getCookieValue("grid" + i) == "true") {
                 document.getElementById("grid" + i).style.opacity = 0;
-                //document.getElementById("grid" + i).innerHTML = "X";
+                bingoArr[Math.floor((i - 1) / 4)][(i - 1) % 4] = 1;
+                updateScore();
             }
 
 
             document.getElementById("grid" + i).onclick = function () {
                 id = i
                 letters = ["A", "B", "C", "D"]
-                numbers = ["4", "1", "2", "3",]
-                passTitle.innerHTML = "Passcode for " + letters[Math.floor((i - 1) / 4)] + numbers[i % 4].toString()
+                passTitle.innerHTML = "Passcode for " + letters[Math.floor((i - 1) / 4)] + ((i - 1) % 4 + 1)
             }
         }
     }
@@ -51,7 +58,30 @@ document.getElementById("passForm").addEventListener("submit", (e) => {
         document.getElementById("grid" + id).style.opacity = 0;
         document.cookie = "grid" + id + "=true";
         passcode.value = "";
+        updateScore();
     } else {
         alert("Incorrect!");
     }
 });
+
+function updateScore() {
+    let tickets = 0
+    for (let i = 0; i < 4; i++) {
+        // Horizontal row done
+        if (bingoArr[i][0] && bingoArr[i][1] && bingoArr[i][2] && bingoArr[i][3]) {
+            tickets++;
+        }
+        // Vertical row done
+        if (bingoArr[0][i] && bingoArr[1][i] && bingoArr[2][i] && bingoArr[3][i]) {
+            tickets++;
+        }
+    }
+    // Diagonal rows
+    if (bingoArr[0][0] && bingoArr[1][1] && bingoArr[2][2] && bingoArr[3][3]) {
+        tickets++;
+    }
+    if (bingoArr[0][3] && bingoArr[1][2] && bingoArr[2][1] && bingoArr[3][0]) {
+        tickets++
+    }
+    document.getElementById("ticketCounter").innerHTML = "Tickets Won: " + tickets;
+}
