@@ -1294,6 +1294,10 @@ input {
     font-family: Avenir;
 }
 
+#ticketCounter {
+    margin-bottom: 0px;
+}
+
 /* OLD GALLERY VIEW
 .galleryItem:nth-of-type(1) {
     grid-column-start: 1;
