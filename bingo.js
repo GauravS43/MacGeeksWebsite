@@ -44,7 +44,7 @@ window.onload = function () {
     }
 }
 
-passcodes = ["ART!", "EVA", "FBFORM", "LEMONS", "LEFTRIGHT", "ORANGEPICCOLO", "3ESTELLAS", "KAHOOT", "SOCIALSFOL", "ONIGIRIMATCHA", "WINGS", "GO", "MEMBERS", "MIKU", "OUTREACH", "GAMBLING??"]
+passcodes = ["THEALLEY", "KYUN", "JACKBOX", "FISHY", "THANKYOU", "MEDIA", "ARTCORE", "EGGHEAD", "AMQCHAMP", "NOTIFIED", "POSE28", "JOLLY", "CRANE", "IDOL", "P1NG00", "ANIFEST"]
 
 
 
@@ -53,7 +53,7 @@ document.getElementById("passForm").addEventListener("submit", (e) => {
 
     let passcode = document.getElementById("passInput");
 
-    if (passcode.value == passcodes[id - 1]) {
+    if (passcode.value.trim().toUpperCase() == passcodes[id - 1]) {
         alert("Correct!");
         document.getElementById("grid" + id).style.opacity = 0;
         document.cookie = "grid" + id + "=true";
