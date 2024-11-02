@@ -13,20 +13,19 @@ let bingoArr = [
 function getCookieValue(name) {
     const regex = new RegExp(`(^| )${name}=([^;]+)`)
     const match = document.cookie.match(regex)
+    console.log(match)
     if (match) {
         return match[2]
     }
 }
 
-
 window.onload = function () {
     let passTitle = document.getElementById("passTitle");
 
     if (window.innerWidth > 100) {
-        console.log("w");
         for (let i = 1; i < 17; i++) {
             if (missingCookies) {
-                document.cookie = "grid" + i + "=false";
+                document.cookie = "grid" + i + "=false; expires=Thu, 7 Nov 2024 12:00:00 UTC";
             }
             else if (getCookieValue("grid" + i) == "true") {
                 document.getElementById("grid" + i).style.opacity = 0;
@@ -37,6 +36,9 @@ window.onload = function () {
 
             document.getElementById("grid" + i).onclick = function () {
                 id = i
+                if (id == 10 || id == 12){
+                    alert("Please show any GEEKS Executive member to get the passcode!")
+                }
                 letters = ["A", "B", "C", "D"]
                 passTitle.innerHTML = "Passcode for " + letters[Math.floor((i - 1) / 4)] + ((i - 1) % 4 + 1)
             }
@@ -56,7 +58,7 @@ document.getElementById("passForm").addEventListener("submit", (e) => {
     if (passcode.value.trim().toUpperCase() == passcodes[id - 1]) {
         alert("Correct!");
         document.getElementById("grid" + id).style.opacity = 0;
-        document.cookie = "grid" + id + "=true";
+        document.cookie = "grid" + id + "=true; expires=Thu, 7 Nov 2024 12:00:00 UTC";
         passcode.value = "";
         bingoArr[Math.floor((id - 1) / 4)][(id - 1) % 4] = 1;
         updateScore();
