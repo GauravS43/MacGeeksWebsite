@@ -22,6 +22,9 @@ function getCookieValue(name) {
 window.onload = function () {
     let passTitle = document.getElementById("passTitle");
 
+    if (!document.cookie){
+        alert("If you are playing on an Incognito Browser, please disable Incognito mode to save answers.");
+    }
     if (window.innerWidth > 100) {
         for (let i = 1; i < 17; i++) {
             if (missingCookies) {
