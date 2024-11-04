@@ -39,7 +39,7 @@ window.onload = function () {
 
             document.getElementById("grid" + i).onclick = function () {
                 id = i
-                if (id == 10 || id == 12){
+                if (id == 10 || id == 11){
                     alert("Please show any GEEKS Executive member to get the passcode!")
                 }
                 letters = ["A", "B", "C", "D"]
@@ -49,7 +49,7 @@ window.onload = function () {
     }
 }
 
-passcodes = ["THEALLEY", "KYUN", "JACKBOX", "FISHY", "THANKYOU", "MEDIA", "ARTCORE", "EGGHEAD", "AMQCHAMP", "NOTIFIED", "POSE28", "JOLLY", "CRANE", "IDOL", "P1NG00", "ANIFEST"]
+passcodes = ["THANKYOU", "KYUN", "CRANE", "FISHY", "THEALLEY", "JACKBOX", "ARTCORE", "EGGHEAD", "AMQCHAMP", "NOTIFIED", "JOLLY", "IDOL", "MEDIA", "POSE28", "P1NG00", "ANIFEST"]
 
 
 
